@@ -1,0 +1,22 @@
+{
+  "name": "studiop_23",
+  "version": "1.0.0",
+  "description": "StudioPresent Praksa 2023 Added structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buljicS/studioP_23.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buljicS/studioP_23/issues"
+  },
+  "homepage": "https://github.com/buljicS/studioP_23#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
