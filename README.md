@@ -1,2 +1,2 @@
 # studioP_23
-Projekat na praksi 
+StudioPresent Praksa 2023
