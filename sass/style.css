@@ -34,6 +34,10 @@
   color: #fff;
   text-align: right;
 }
+.hItems .workTime .maxWidth {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .hItems .hero {
   background-image: url("../img/headerIMG.jpg");
   background-repeat: no-repeat;
@@ -60,10 +64,41 @@
 
 .dryAged {
   background-color: black;
-  color: #fff;
+  color: white;
+  padding: 4em 0;
+}
+.dryAged .dAWrap {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 8em;
+}
+.dryAged .dAWrap .dAleft .head {
+  padding-bottom: 2em;
+}
+.dryAged .dAWrap .dAleft .head h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+.dryAged .dAWrap .dAleft .head #headP {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.dryAged .dAWrap .dAleft #wrapDesc {
+  max-width: 450px;
+  margin: 0 auto;
+  line-height: 1.7em;
+  font-weight: 300;
+  padding-bottom: 2em;
+}
+.dryAged .dAWrap .dAleft .drybtn {
+  font-size: 1em;
+  padding: 0.7em 3em;
+  background-color: rgb(166, 33, 32);
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 2em;
+}
+.dryAged .dAWrap .dAright img {
+  padding: 0.5em;
 }
 
 .grillkurs {
@@ -80,4 +115,9 @@
 }
 * html {
   scroll-behavior: smooth;
+}
+
+.cont {
+  max-width: 1320px;
+  margin: 0 auto;
 }

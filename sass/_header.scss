@@ -37,6 +37,11 @@
         font-size: 14px;
         color: #fff;
         text-align: right;
+
+        .maxWidth{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
     }
 
     .hero{

@@ -1,7 +1,50 @@
 .dryAged{
     background-color: black;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: white;
+    padding: 4em 0;
+
+    .dAWrap{
+        display: flex;
+        gap: 8em;
+        .dAleft{
+            .head{
+                padding-bottom: 2em;
+                h2{
+                    font-size: 2em;
+                    font-weight: 700;
+                }
+    
+                #headP{
+                    font-size: 1.5em;
+                    font-weight: 700;
+                }
+            }
+
+            #wrapDesc{
+                max-width: 450px;
+                margin: 0 auto;
+                line-height: 1.7em;
+                font-weight: 300;
+                padding-bottom: 2em;
+            }
+
+            .drybtn{
+                font-size: 1em;
+                padding: 0.7em 3em;
+                background-color: rgba(166, 33, 32, 1);
+                color: #fff;
+                border: 1px solid white;
+                border-radius: 2em;
+            }
+        }
+
+
+        .dAright{
+            img{
+                padding: 0.5em;
+            }
+        }
+    }
+
+
 }
