@@ -1,8 +1,6 @@
-.maxWidth {
-  max-width: 1200px;
-  margin: 0 auto;
+.hItems {
+  position: relative;
 }
-
 .hItems .navBar {
   display: flex;
   justify-content: space-around;
@@ -68,7 +66,7 @@
   align-items: center;
 }
 
-.fleischversand {
+.grillkurs {
   background-color: rgb(166, 33, 32);
   display: flex;
   justify-content: space-between;
