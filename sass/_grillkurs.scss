@@ -1,8 +1,17 @@
 .grillkurs{
-    background-color: rgba(166, 33, 32, 1);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: rgba(166, 33, 32, 1);
 
-    
+    .grillleft{
+        flex: 50%;
+
+    }
+
+    .grillright{
+        img{
+            display: block;
+            flex: 50%;
+        }
+
+    }
 }

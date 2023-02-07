@@ -102,10 +102,15 @@
 }
 
 .grillkurs {
-  background-color: rgb(166, 33, 32);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: rgb(166, 33, 32);
+}
+.grillkurs .grillleft {
+  flex: 50%;
+}
+.grillkurs .grillright img {
+  display: block;
+  flex: 50%;
 }
 
 * {
