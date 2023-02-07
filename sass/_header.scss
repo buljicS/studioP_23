@@ -1,0 +1,66 @@
+.hItems{
+    .navBar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #B50014;
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 1em;
+            .navItems{
+                .navLink{
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: #fff;
+                    font-weight: 700;
+                }
+
+                //custom class for navLink
+                .download{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 0.3em;
+                }
+            }
+        }
+    }
+
+    .workTime{
+        background-color:#252525;
+        padding: 0.8em 0;
+        font-size: 14px;
+        color: #fff;
+        text-align: right;
+    }
+
+    .hero{
+        background-image: url("../img/headerIMG.jpg");
+        background-repeat: no-repeat;
+        background-size: calc(100%);  
+        height: 50vh;
+
+        .heroText{
+            position: relative;
+            top: 40%;
+            background-color: rgba(0, 0, 0, 0.3);
+            max-width: 650px;
+            padding: 2em;
+            h2{
+                font-size: 2em;
+                color: #fff;
+            }
+
+            p{
+                font-size: 1em;
+                color: #fff;
+                font-weight: 300;
+                text-align: right;
+            }
+        }
+    }
+}

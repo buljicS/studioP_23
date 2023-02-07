@@ -4,46 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/style.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
     <title>Brath</title>
 </head>
 <body>
     <!--Header-->
         <header class="hItems">
-            <div class="hLogo">
-                <img src="./img/logo.svg" alt="Brath">
-            </div>
-
+            
             <nav class="navBar">
-                <ul>
-                    <li class="navItems"><a href="#" class="navLink">Die Metzgerei</a></li>
-                    <li class="navItems"><a href="#" class="navLink">Dry Aged</a></li>
-                    <li class="navItems"><a href="#" class="navLink">Fleischversand</a></li>
+                <img src="./img/logo.svg" alt="Brath"> 
+                
+                <ul class="nav">
+                    <li class="navItems"><a href="#diemetz" class="navLink">Die Metzgerei</a></li>
+                    <li class="navItems"><a href="#dryaged" class="navLink">Dry Aged</a></li>
+                    <li class="navItems"><a href="#fleischversand" class="navLink">Fleischversand</a></li>
                     <li class="navItems"><a href="#" class="navLink">Events/Kurse</a></li>
                     <li class="navItems"><a href="#" class="navLink">Partyservice</a></li>
                     <li class="navItems"><a href="#" class="navLink">Tagesessen</a></li>
                     <li class="navItems"><a href="#" class="navLink">Impressum</a></li>
                     <li class="navItems"><a href="#" class="navLink">Kontakt</a></li>
-                    
                     <li class="navItems">
                         <a href="" class="navLink download"><img src="./img/navDowload.svg" alt="download icon"> download</a>
                     </li>
                 </ul>
             </nav>
 
-            <div class="hWorkTime">
-                <img src="" alt="clock">
-                <p class="workTime">Test</p>
-            </div>
+            <section class="workTime">
+                <div class="maxWidth">
+                    <img src="./img/clock.svg" alt="clock.svg">
+                    <span>Opentime:   Di. - Fr.: 07:00-13:00  und 15:00-18:30.    Sa.:	 07:30	-	12:30</span>
+                </div>
+                
+            </section>
 
-            <div class="hero">
+            <div class="hero" id="diemetz">
                 <div class="heroText">
-                    <h2>Header</h2>
-                    <p>Text</p>
+                    <h2>Heiko Brath
+                        <br>Metzgermeister</h2>
+                    <p>Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam Aperol Spritz probatus pertinax.</p>
                 </div>
             </div>
-            
         </header>
     <!--Header-->
+
+
+    <!--Main-->
+    <main>
+
+        <!--dryAged-->
+        <section class="dryAged" id="dryaged">
+            <div class="dAleft">
+                <h2>Dry aged</h2>
+                <h4>Alte Wutz, Dry Aged</h4>
+                <p>Halt amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.
+                   <br>id latine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</p>
+                   <button>Dry Aged</button>
+                   <button>Alte Wutz</button>
+            </div>
+
+            <div class="dAright">
+                <img src="./img/topImg.jpg" alt="topimg">
+                <div class="botImg">
+                    <img src="./img/botImg2.png" alt="botimg">
+                    <img src="./img/botImg3.png" alt="botimg">
+                    <img src="./img/botImg.png" alt="botimg">
+                </div>
+            </div>
+        </section>
+        <!--dryAged-->
+
+        <!--fleischversand-->
+        <section class="fleischversand" id="fleischversand">
+            <div class="fleleft">
+                <h2>Buchen Sie den 
+                    <br>Grillkurs jetzt</h2>
+
+                <p>professioneller Lehrer
+                    ausgezeichneter Metzger
+                    1 Tag
+                    lernen Sie die Kunst des Grillens</p>
+
+                <button>Grillkurs</button>
+            </div>
+
+            <div class="fleright">
+                <img src="./img/victoria.jpg" alt="victoria">
+            </div>
+        </section>
+        <!--fleischversand-->
+
+        <section>
+
+        </section>
+    </main>
+    <!--Main-->
+
+
+    <!--Footer-->
+    <!--Footer-->
 
 </body>
 </html>
