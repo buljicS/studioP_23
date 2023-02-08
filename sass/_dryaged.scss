@@ -28,14 +28,21 @@
                 padding-bottom: 2em;
             }
 
-            .drybtn{
-                font-size: 1em;
-                padding: 0.7em 3em;
-                background-color: rgba(166, 33, 32, 1);
-                color: #fff;
-                border: 1px solid white;
-                border-radius: 2em;
+            .dryButtons{
+                display: flex;
+                flex-direction: row;
+                gap: 1em;
+                
+                .drybtn{
+                    font-size: 1em;
+                    padding: 0.7em 3em;
+                    background-color: rgba(166, 33, 32, 1);
+                    color: #fff;
+                    border: 1px solid white;
+                    border-radius: 2em;
+                }
             }
+
         }
 
         .dAright{

@@ -1,10 +1,13 @@
 @import "header";
 @import "dryaged";
 @import "grillkurs";
+@import "dh";
+@import "fleischversand";
 
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 
     html{
