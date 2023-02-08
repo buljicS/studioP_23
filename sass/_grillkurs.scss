@@ -4,11 +4,11 @@
 
     .grillleft{
         color: #fff;
-        flex: 50%;
+        flex: 1;
         align-self: center;
         text-align: center;
         .glTxt{
-            max-width: 480px;
+            max-width: 250px;
             margin: 0 auto;
             text-align: start;
             h2{
@@ -42,10 +42,11 @@
     }
 
     .grillright{
-        flex: 50%;
+        flex: 1;
         justify-content: flex-end;
         img{
             display: block;
+            width: 100%;
 
         }
 

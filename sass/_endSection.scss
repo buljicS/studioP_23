@@ -1,0 +1,27 @@
+.endSec{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+
+    .endTop{
+        padding: 3em 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .endMid{
+        padding: 10em 0;
+        .awardSection{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5em;
+            padding-bottom: 10em;
+
+            img{
+                width: 50%;
+            }
+        }
+    }
+}

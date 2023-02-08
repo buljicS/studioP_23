@@ -1,0 +1,23 @@
+.custome{
+    display: flex;
+    background-color: #A62120;
+    color: #fff;
+
+    .cusLeft{
+        flex: 50%;
+        img{
+            display: block;
+            width: 90%;
+        }
+    }
+
+    .cusRight{
+        flex: 50%;
+        text-align: center;
+        align-self: center;
+        .crTxt{
+            max-width: 480px;
+            margin: 0 auto;
+        }
+    }
+}

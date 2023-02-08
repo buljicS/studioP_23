@@ -1,10 +1,17 @@
 .hItems .navBar {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #b50014;
 }
+.hItems .navBar .navLogo {
+  position: absolute;
+  left: 15%;
+  top: 10%;
+}
 .hItems .navBar .nav {
+  padding: 2em 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -66,7 +73,7 @@
 }
 .dryAged .dAWrap {
   display: flex;
-  gap: 8em;
+  gap: 12em;
 }
 .dryAged .dAWrap .dAleft .head {
   padding-bottom: 2em;
@@ -109,12 +116,12 @@
 }
 .grillkurs .grillleft {
   color: #fff;
-  flex: 50%;
+  flex: 1;
   align-self: center;
   text-align: center;
 }
 .grillkurs .grillleft .glTxt {
-  max-width: 480px;
+  max-width: 250px;
   margin: 0 auto;
   text-align: start;
 }
@@ -140,11 +147,12 @@
   color: #000;
 }
 .grillkurs .grillright {
-  flex: 50%;
+  flex: 1;
   justify-content: flex-end;
 }
 .grillkurs .grillright img {
   display: block;
+  width: 100%;
 }
 
 .dh {
@@ -189,6 +197,28 @@
   padding-bottom: 16em;
 }
 
+.custome {
+  display: flex;
+  background-color: #A62120;
+  color: #fff;
+}
+.custome .cusLeft {
+  flex: 50%;
+}
+.custome .cusLeft img {
+  display: block;
+  width: 90%;
+}
+.custome .cusRight {
+  flex: 50%;
+  text-align: center;
+  align-self: center;
+}
+.custome .cusRight .crTxt {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
 .fleischversand {
   height: 50vh;
   background-image: url("../img/krmetina.png");
@@ -215,6 +245,39 @@
   border-radius: 2em;
   max-width: 375px;
   margin: 0 auto;
+}
+
+.endSec {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+.endSec .endTop {
+  padding: 3em 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.endSec .endMid {
+  padding: 10em 0;
+}
+.endSec .endMid .awardSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  padding-bottom: 10em;
+}
+.endSec .endMid .awardSection img {
+  width: 50%;
+}
+
+footer {
+  background-color: #B50014;
+}
+footer .location {
+  display: flex;
+  align-items: start;
 }
 
 * {
