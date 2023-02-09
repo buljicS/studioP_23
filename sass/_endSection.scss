@@ -13,14 +13,20 @@
     .endMid{
         padding: 10em 0;
         .awardSection{
+            h2{
+                font-size: 2em;
+                color: #fff;
+            }
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 5em;
             padding-bottom: 10em;
+            color: rgba(255, 255, 255, 0.51);
+            
 
-            img{
-                width: 50%;
+            .awIMG{
+                padding-bottom: 1em;
             }
         }
     }

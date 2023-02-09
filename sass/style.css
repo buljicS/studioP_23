@@ -1,14 +1,14 @@
 .hItems .navBar {
-  position: relative;
   display: flex;
-  justify-content: space-around;
+  gap: 2em;
+  justify-content: center;
   align-items: center;
   background-color: #b50014;
+  height: 4em;
 }
-.hItems .navBar .navLogo {
-  position: absolute;
-  left: 15%;
-  top: 10%;
+.hItems .navBar #logo {
+  margin-top: 7em;
+  z-index: 1;
 }
 .hItems .navBar .nav {
   padding: 2em 0;
@@ -43,6 +43,7 @@
   margin: 0 auto;
 }
 .hItems .hero {
+  position: relative;
   background-image: url("../img/headerIMG.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -50,7 +51,7 @@
 }
 .hItems .hero .heroText {
   position: absolute;
-  top: 50%;
+  top: 30%;
   background-color: rgba(0, 0, 0, 0.3);
   max-width: 650px;
   padding: 2em;
@@ -58,12 +59,15 @@
 .hItems .hero .heroText h2 {
   font-size: 2em;
   color: #fff;
+  text-align: right;
 }
 .hItems .hero .heroText p {
+  max-width: 230px;
+  margin: 0 auto;
+  text-align: left;
   font-size: 1em;
   color: #fff;
   font-weight: 300;
-  text-align: right;
 }
 
 .dryAged {
@@ -267,17 +271,66 @@
   align-items: center;
   gap: 5em;
   padding-bottom: 10em;
+  color: rgba(255, 255, 255, 0.51);
 }
-.endSec .endMid .awardSection img {
-  width: 50%;
+.endSec .endMid .awardSection h2 {
+  font-size: 2em;
+  color: #fff;
+}
+.endSec .endMid .awardSection .awIMG {
+  padding-bottom: 1em;
 }
 
 footer {
   background-color: #B50014;
 }
-footer .location {
+footer .container {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .container .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+footer .container .contact .location {
+  display: flex;
+  gap: 0.3em;
   align-items: start;
+  color: #fff;
+}
+footer .container .contact .displayProop {
+  display: flex;
+  gap: 0.3em;
+  align-items: center;
+  color: #fff;
+}
+footer .container .social {
+  display: flex;
+  gap: 0.7em;
+  align-items: center;
+}
+footer .container .social .socialP {
+  font-size: 1em;
+  color: #fff;
+}
+footer .container .social .socialIcons {
+  display: flex;
+  gap: 0.5em;
+}
+footer .dimmedtrack {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0.5em 0;
+}
+footer .dimmedtrack .studioPresent {
+  font-style: italic;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 * {
