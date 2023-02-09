@@ -289,6 +289,22 @@
   margin: 0 auto;
 }
 
+.genussnetz {
+  background-color: #000;
+  text-align: center;
+}
+.genussnetz .geContent {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20em;
+  padding: 5em 0;
+}
+.genussnetz .geContent .geTxt {
+  text-align: left;
+}
+
 footer {
   background-color: #B50014;
 }
