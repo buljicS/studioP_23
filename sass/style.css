@@ -30,6 +30,7 @@
   flex-direction: row;
   align-items: center;
   gap: 0.3em;
+  font-size: 14px;
 }
 .hItems .workTime {
   background-color: #252525;
@@ -44,74 +45,98 @@
 }
 .hItems .hero {
   position: relative;
-  background-image: url("../img/headerIMG.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 70vh;
+}
+.hItems .hero img {
+  display: block;
+  width: 100%;
 }
 .hItems .hero .heroText {
   position: absolute;
   top: 30%;
   background-color: rgba(0, 0, 0, 0.3);
   max-width: 650px;
-  padding: 2em;
+  padding: 3em;
+  padding-left: 15em;
 }
 .hItems .hero .heroText h2 {
-  font-size: 2em;
+  max-width: 280px;
+  margin: 0 auto;
+  font-size: 2.2em;
   color: #fff;
-  text-align: right;
+  text-align: left;
+  font-weight: 700;
+  line-height: 1.2em;
+  padding-bottom: 0.8em;
 }
 .hItems .hero .heroText p {
-  max-width: 230px;
+  max-width: 280px;
   margin: 0 auto;
   text-align: left;
   font-size: 1em;
   color: #fff;
   font-weight: 300;
+  line-height: 1.5em;
 }
 
 .dryAged {
-  background-color: black;
-  color: white;
-  padding: 4em 0;
-}
-.dryAged .dAWrap {
+  padding: 5em 0;
+  background-color: #000;
+  color: #fff;
   display: flex;
-  gap: 12em;
 }
-.dryAged .dAWrap .dAleft .head {
-  padding-bottom: 2em;
+.dryAged .daLeft {
+  flex: 50%;
+  text-align: left;
+  align-self: center;
+  align-items: flex-end;
 }
-.dryAged .dAWrap .dAleft .head h2 {
-  font-size: 2em;
-  font-weight: 700;
-}
-.dryAged .dAWrap .dAleft .head #headP {
-  font-size: 1.5em;
-  font-weight: 700;
-}
-.dryAged .dAWrap .dAleft #wrapDesc {
-  max-width: 450px;
-  margin: 0 auto;
-  line-height: 1.7em;
+.dryAged .daLeft .daTxt {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  max-width: 480px;
+  margin: auto;
+  line-height: 1.5em;
   font-weight: 300;
-  padding-bottom: 2em;
 }
-.dryAged .dAWrap .dAleft .dryButtons {
+.dryAged .daLeft .daTxt .daTxTop h2 {
+  font-size: 2em;
+  padding-bottom: 0.2em;
+  font-weight: 700;
+}
+.dryAged .daLeft .daTxt .daTxTop h4 {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.dryAged .daLeft .daTxt .daButtons {
   display: flex;
   flex-direction: row;
   gap: 1em;
+  align-items: flex-start;
 }
-.dryAged .dAWrap .dAleft .dryButtons .drybtn {
-  font-size: 1em;
-  padding: 0.7em 3em;
+.dryAged .daLeft .daTxt .daButtons .drybtn {
   background-color: rgb(166, 33, 32);
-  color: #fff;
-  border: 1px solid white;
+  border: 1px solid #fff;
   border-radius: 2em;
+  padding: 0.7em 3em;
+  font-size: 1em;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
 }
-.dryAged .dAWrap .dAright img {
-  padding: 0.5em;
+.dryAged .daRight {
+  flex: 50%;
+}
+.dryAged .daRight .daIMG {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
+}
+.dryAged .daRight .daIMG .botIMG {
+  display: flex;
+  justify-content: start;
+  gap: 1.1em;
 }
 
 .grillkurs {
@@ -132,13 +157,14 @@
 .grillkurs .grillleft .glTxt h2 {
   font-size: 2em;
   padding-bottom: 1em;
+  line-height: 1.5em;
 }
 .grillkurs .grillleft .glTxt ul li {
-  font-size: 5px;
-  line-height: 4em;
+  font-size: 4px;
+  line-height: 9em;
 }
 .grillkurs .grillleft .glTxt ul li .lItem {
-  font-size: 2.5em;
+  font-size: 4em;
   padding-left: 0.2em;
   font-weight: 300;
 }
@@ -147,6 +173,7 @@
   border-radius: 2em;
   padding: 0.7em 3em;
   margin-top: 2em;
+  font-size: 1em;
   background-color: #fff;
   color: #000;
 }
@@ -211,7 +238,7 @@
 }
 .custome .cusLeft img {
   display: block;
-  width: 90%;
+  width: 100%;
 }
 .custome .cusRight {
   flex: 50%;
@@ -221,6 +248,17 @@
 .custome .cusRight .crTxt {
   max-width: 480px;
   margin: 0 auto;
+  font-weight: 300;
+  line-height: 1.5em;
+  text-align: left;
+}
+.custome .cusRight .crTxt h2 {
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}
+.custome .cusRight .crTxt h3 {
+  font-size: 1.4em;
+  padding-bottom: 1em;
 }
 
 .fleischversand {
@@ -249,36 +287,6 @@
   border-radius: 2em;
   max-width: 375px;
   margin: 0 auto;
-}
-
-.endSec {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-}
-.endSec .endTop {
-  padding: 3em 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.endSec .endMid {
-  padding: 10em 0;
-}
-.endSec .endMid .awardSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5em;
-  padding-bottom: 10em;
-  color: rgba(255, 255, 255, 0.51);
-}
-.endSec .endMid .awardSection h2 {
-  font-size: 2em;
-  color: #fff;
-}
-.endSec .endMid .awardSection .awIMG {
-  padding-bottom: 1em;
 }
 
 footer {

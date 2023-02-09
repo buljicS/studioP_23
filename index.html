@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./sass/style.css" />
 
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <title>Brath</title>
   </head>
@@ -48,8 +48,9 @@
       </section>
 
       <div class="hero">
+        <img src="./img/headerIMG.jpg" alt="header">
         <div class="heroText">
-          <h2>Heiko Brath <br />Metzgermeister</h2>
+          <h2>Heiko Brath Metzgermeister</h2>
           <p>
             Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit
             argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam
@@ -62,43 +63,43 @@
 
     <!--Main-->
     <main>
-      <!--dryAged-->
-      <section class="dryAged">
-        <div class="dAWrap cont">
-          <div class="dAleft">
-            <div class="head">
-              <h2 class="dryH2">Dry aged</h2>
-              <p id="headP">Alte Wutz, Dry Aged</p>
-            </div>
-
-            <p id="wrapDesc">
-              Halt amet, consectetur Handtasche elit, sed do eiusmod tempor
-              Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad
-              minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi
-              Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener
-              Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim
-              Stuttgart. <br/><br/>id latine indoctum complectitur HugoClub
-              Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an,
-              his ei Reise euismod assentior.
-            </p>
-
-            <div class="dryButtons">
-                <button class="drybtn">Dry Aged</button>
-                <button class="drybtn">Alte Wutz</button>
+      <!--dryaged-->
+        <section class="dryAged">
+          <div class="daLeft">
+            <div class="daTxt">
+              <div class="daTxTop">
+                <h2>Dry Aged</h2>
+                <h4>Alte Wutz, Dry Aged</h4> 
+              </div>
+              <p>Halt amet, consectetur Handtasche elit, sed do eiusmod tempor
+                Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad
+                minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi
+                Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener
+                Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim
+                Stuttgart. <br/><br/>id latine indoctum complectitur HugoClub
+                Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an,
+                his ei Reise euismod assentior.</p>
+                <div class="daButtons">
+                  <button class="drybtn">Dry Aged</button>
+                  <button class="drybtn">Alte Wutz</button>
+              </div>
             </div>
           </div>
 
-          <div class="dAright">
-            <img src="./img/topImg.jpg" alt="topimg" />
-            <div class="botImg">
-              <img src="./img/botImg2.png" alt="botimg" />
-              <img src="./img/botImg3.png" alt="botimg" />
-              <img src="./img/botImg.png" alt="botimg" />
+          <div class="daRight">
+            <div class="daIMG">
+              <div class="topIMG">
+                <img src="./img/topImg.jpg" alt="topImg">
+              </div>
+              <div class="botIMG">
+                <img src="./img/botImg.png" alt="botimg">
+                <img src="./img/botImg2.png" alt="botimg">
+                <img src="./img/botImg3.png" alt="botimg">
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!--dryAged-->
+        </section>
+      <!--dryaged-->
 
       <!--grillkurs-->
       <section class="grillkurs">
@@ -132,8 +133,10 @@
               Halt amet, consectetur Handtasche elit, sed do eiusmod tempor
               Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad
               minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi
-              Sprechen Sie deutsch aliquip ex ea commodo consequat. <br> Wiener
-              Schnitzel aute irure dolor in Guten Tag mollit anim Stuttgart. <br>id
+              Sprechen Sie deutsch aliquip ex ea commodo consequat.
+            </p>
+              <p>Wiener Schnitzel aute irure dolor in Guten Tag mollit anim Stuttgart.</p>
+                <p>id
               latine indoctum complectitur HugoClub Mate mea meliore denique
               nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod
               assentior
@@ -178,6 +181,14 @@
               ullamco laboris nisi Sprechen Sie deutsch aliquip ex ea commodo
               consequat.
             </p>
+            <br>
+            <p>
+              Wiener Schnitzel amet, consectetur Handtasche elit,
+              sed do eiusmod tempor Stuttgart ut labore et dolore magna 99
+              Luftballons Ut enim ad minim veniam, Turnbeutel nostrud exercitation
+              ullamco laboris nisi Sprechen Sie deutsch aliquip ex ea commodo
+              consequat.
+            </p>
           </div>
 
         </div>
@@ -191,8 +202,8 @@
       </section>
       <!--Fleischversand-->
 
-      <!--end_Section-->
-      <section class="endSec">
+      <!--genussnetz-->
+      <section class="genussnetz">
         <div class="endTop">
           <div class="eTopLeft">
             <img src="./img/genussnetz logo 1.svg" alt="genu logo" />
@@ -201,40 +212,56 @@
           <div class="eTopRight">
             <h2>Metzgerei Brath ist Mitglied <br />im Genussnetzwerk</h2>
 
-            <button>Gehen zu site</button>
+            <button class="endSbtn">Gehen zu site</button>
           </div>
         </div>
+      </section>
+      <!--genussnetz-->
 
-        <img src="./img/vonal 1.svg" alt="vonal" />
 
-        <div class="endMid">
-          <div class="awardSection">
-            <h2>Auszeichnungen</h2>
-            <div class="award">
-              <img class="awIMG"src="./img/nagrada1.png" alt="n1" />
-              <p>Tollit argumentum <br><span class="awPadding">genau Saepe lobortis</span> </p>
-            </div>
-
-            <div class="award">
-              <img class="awIMG" src="./img/nagrada2.svg" alt="n2" />
-              <p>Schneewittchen <br><span class="awPadding">denique</span> </p>
-            </div>
-
-            <div class="award">
-              <img class="awIMG"src="./img/nagrada3.png" alt="n3" />
-              <p>Grimms Märchen <br><span class="awPadding">expetenda</span> </p>
-            </div>
-
-            <div class="award">
-              <img class="awIMG"src="./img/nagrada4.png" alt="n4" />
-              <p>Mettwurst mei <br><span class="awPadding">ullum gloriatur.</span> </p>
-            </div>
+        <!--award_section-->
+      <section class="awardSection">
+          <img src="./img/vonal 1.svg" alt="vonal" />
+          <h2>Auszeichnungen</h2>
+          <div class="award">
+            <img class="awIMG"src="./img/nagrada1.png" alt="n1" />
+            <p>Tollit argumentum <br><span class="awPadding">genau Saepe lobortis</span> </p>
           </div>
+
+          <div class="award">
+            <img class="awIMG" src="./img/nagrada2.svg" alt="n2" />
+            <p>Schneewittchen <br><span class="awPadding">denique</span> </p>
+          </div>
+
+          <div class="award">
+            <img class="awIMG"src="./img/nagrada3.png" alt="n3" />
+            <p>Grimms Märchen <br><span class="awPadding">expetenda</span> </p>
+          </div>
+
+          <div class="award">
+            <img class="awIMG"src="./img/nagrada4.png" alt="n4" />
+            <p>Mettwurst mei <br><span class="awPadding">ullum gloriatur.</span> </p>
+          </div>
+      </section>
 
           <img src="./img/vonal 1.svg" alt="vonal" />
         </div>
       </section>
-      <!--end_Section-->
+      <!--award_section-->
+
+      <!--comment_section-->
+        <section class="comments">
+          <div class="com1">
+
+          </div>
+          <div class="com2">
+
+          </div>
+          <div class="com3">
+            
+          </div>
+        </section>
+      <!--comment_section-->
     </main>
     <!--Main-->
 
@@ -281,9 +308,3 @@
     <!--Footer-->
   </body>
 </html>
-
-
-<!-- Klauprechtstraße  25
-76137 Karlsruhe, Germany
-+49 721 358060
-info@partyservice-brath.de -->

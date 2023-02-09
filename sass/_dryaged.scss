@@ -1,54 +1,67 @@
 .dryAged{
-    background-color: black;
-    color: white;
-    padding: 4em 0;
+    padding: 5em 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    
 
-    .dAWrap{
-        display: flex;
-        gap: 12em;
-        .dAleft{
-            .head{
-                padding-bottom: 2em;
+    .daLeft{
+        flex: 50%;
+        text-align: left;
+        align-self: center;
+        align-items: flex-end;
+        .daTxt{
+            display: flex;
+            flex-direction: column;
+            gap: 3em;
+            max-width: 480px;
+            margin: auto;
+            line-height: 1.5em;
+            font-weight: 300;
+            .daTxTop{
                 h2{
                     font-size: 2em;
+                    padding-bottom: 0.2em;
                     font-weight: 700;
                 }
-    
-                #headP{
-                    font-size: 1.5em;
+
+                h4{
+                    font-size: 1.4em;
                     font-weight: 700;
                 }
             }
 
-            #wrapDesc{
-                max-width: 450px;
-                margin: 0 auto;
-                line-height: 1.7em;
-                font-weight: 300;
-                padding-bottom: 2em;
-            }
-
-            .dryButtons{
+            .daButtons{
                 display: flex;
                 flex-direction: row;
                 gap: 1em;
-                
+                align-items: flex-start;
+
                 .drybtn{
-                    font-size: 1em;
-                    padding: 0.7em 3em;
                     background-color: rgba(166, 33, 32, 1);
-                    color: #fff;
-                    border: 1px solid white;
+                    border: 1px solid #fff;
                     border-radius: 2em;
+                    padding: 0.7em 3em;
+                    font-size: 1em;
+                    text-align: center;
+                    color: #fff;
+                    font-weight: 400;
                 }
             }
-
         }
+    }
 
-        .dAright{
-            img{
-                padding: 0.5em;
-                
+    .daRight{
+        flex: 50%;   
+        .daIMG{
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.1em;
+            .botIMG{
+                display: flex;
+                justify-content: start;
+                gap: 1.1em;
             }
         }
     }
