@@ -1,0 +1,26 @@
+.award{
+    //padding: 8em 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+
+    .awardCon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5em;
+        text-align: center;
+
+        .awIMG{
+            padding-bottom: 1em;
+        }
+        .contentP{
+            font-weight: 300;
+            line-height: 1.7em;
+        }
+    }
+
+    #vonal{
+        padding-top: 8em;
+    }
+}

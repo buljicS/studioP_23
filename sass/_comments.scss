@@ -1,0 +1,130 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  gap: 2em;
+  padding-bottom: 8em;
+
+  .comHeader {
+    h4 {
+      color: #555;
+      font-size: 1.2em;
+      font-weight: 700;
+      padding-top: 2em;
+      padding-bottom: 1em;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      padding-bottom: 2em;
+    }
+  }
+
+  .cards {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+
+    .active {
+      position: relative;
+      font-weight: 300;
+      line-height: 24px;
+      height: 480px;
+      background-color: #333;
+      max-width: 500px;
+      padding: 5em 2em;
+
+      .cardText {
+        .comment {
+          padding-bottom: 5em;
+        }
+      }
+      .cardHead {
+        padding-bottom: 1em;
+        img {
+          display: block;
+          margin: 0 auto;
+          padding: 0.5em 0;
+        }
+      }
+
+      .user {
+        font-weight: 400;
+        font-size: 1em;
+      }
+
+      #quote {
+        position: absolute;
+        bottom: -22px;
+        right: 15px;
+      }
+
+      #leftClick{
+        position: absolute;
+        top: 50%;
+        left: -2.5em;
+
+        &:hover{
+            cursor: pointer;
+        }
+      }
+
+      #rightClick{
+        position: absolute;
+        top: 50%;
+        right: -2.5em;
+
+        &:hover{
+            cursor: pointer;
+        }
+      }
+    }
+
+    .inactive {
+      .comment{
+        padding-bottom: 2em;
+        padding: 2em;
+      } 
+
+      .user{
+        color: #666;
+        font-weight: 400;
+      }
+
+      height: 290px;
+      max-width: 480px;
+      margin: auto 0;
+      padding: 10em 4em;
+      padding: 5em 2em;
+
+      img {
+        display: none;
+      }
+      background-color: #111;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-emphasis: center;
+      font-weight: 300;
+      line-height: 1.5em;
+    }
+  }
+
+  .comFooter {
+    padding-top: 2em;
+    .combtn {
+      padding: 0.7em 3em;
+      border: 1px solid #fff;
+      border-radius: 2em;
+      background-color: rgba(166, 33, 32, 1);
+      font-size: 1em;
+      color: #fff;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

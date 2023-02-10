@@ -292,6 +292,7 @@
 .genussnetz {
   background-color: #000;
   text-align: center;
+  padding: 8em 0;
 }
 .genussnetz .geContent {
   color: #fff;
@@ -299,10 +300,158 @@
   align-items: center;
   justify-content: center;
   gap: 20em;
-  padding: 5em 0;
+  padding: 8em 0;
 }
 .genussnetz .geContent .geTxt {
   text-align: left;
+}
+.genussnetz .geContent .geTxt h2 {
+  font-size: 2em;
+  line-height: 42px;
+  padding-bottom: 1em;
+}
+.genussnetz .geContent .geTxt .gebtn {
+  padding: 0.7em 2.5em;
+  border: 1px solid #fff;
+  border-radius: 2em;
+  background-color: rgb(166, 33, 32);
+  font-size: 1em;
+  font-weight: 400;
+  color: #fff;
+}
+
+.award {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+.award .awardCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+  text-align: center;
+}
+.award .awardCon .awIMG {
+  padding-bottom: 1em;
+}
+.award .awardCon .contentP {
+  font-weight: 300;
+  line-height: 1.7em;
+}
+.award #vonal {
+  padding-top: 8em;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  gap: 2em;
+  padding-bottom: 8em;
+}
+.comments .comHeader h4 {
+  color: #555;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+.comments .comHeader h2 {
+  font-size: 2.5em;
+  padding-bottom: 2em;
+}
+.comments .cards {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+.comments .cards .active {
+  position: relative;
+  font-weight: 300;
+  line-height: 24px;
+  height: 480px;
+  background-color: #333;
+  max-width: 500px;
+  padding: 5em 2em;
+}
+.comments .cards .active .cardText .comment {
+  padding-bottom: 5em;
+}
+.comments .cards .active .cardHead {
+  padding-bottom: 1em;
+}
+.comments .cards .active .cardHead img {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 0;
+}
+.comments .cards .active .user {
+  font-weight: 400;
+  font-size: 1em;
+}
+.comments .cards .active #quote {
+  position: absolute;
+  bottom: -22px;
+  right: 15px;
+}
+.comments .cards .active #leftClick {
+  position: absolute;
+  top: 50%;
+  left: -2.5em;
+}
+.comments .cards .active #leftClick:hover {
+  cursor: pointer;
+}
+.comments .cards .active #rightClick {
+  position: absolute;
+  top: 50%;
+  right: -2.5em;
+}
+.comments .cards .active #rightClick:hover {
+  cursor: pointer;
+}
+.comments .cards .inactive {
+  height: 290px;
+  max-width: 480px;
+  margin: auto 0;
+  padding: 10em 4em;
+  padding: 5em 2em;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-text-emphasis: center;
+          text-emphasis: center;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.comments .cards .inactive .comment {
+  padding-bottom: 2em;
+  padding: 2em;
+}
+.comments .cards .inactive .user {
+  color: #666;
+  font-weight: 400;
+}
+.comments .cards .inactive img {
+  display: none;
+}
+.comments .comFooter {
+  padding-top: 2em;
+}
+.comments .comFooter .combtn {
+  padding: 0.7em 3em;
+  border: 1px solid #fff;
+  border-radius: 2em;
+  background-color: rgb(166, 33, 32);
+  font-size: 1em;
+  color: #fff;
+}
+.comments .comFooter .combtn:hover {
+  cursor: pointer;
 }
 
 footer {
