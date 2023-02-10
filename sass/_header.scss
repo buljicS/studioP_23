@@ -12,6 +12,11 @@
       z-index: 1;
     }
 
+    .icon{
+      display: none;
+    }
+}
+
     .nav {
       padding: 2em 0;
       display: flex;
@@ -59,33 +64,89 @@
       display: block;
       width: 100%;
     }
-    .heroText {
-      position: absolute;
-      top: 30%;
-      background-color: rgba(0, 0, 0, 0.3);
-      max-width: 650px;
-      padding: 3em;
-      padding-left: 15em;
-      h2 {
-        max-width: 280px;
-        margin: 0 auto;
-        font-size: 2.2em;
-        color: #fff;
-        text-align: left;
-        font-weight: 700;
-        line-height: 1.2em;
-        padding-bottom: 0.8em;
-      }
+  }
 
-      p {
-        max-width: 280px;
-        margin: 0 auto;
-        text-align: left;
-        font-size: 1em;
-        color: #fff;
-        font-weight: 300;
-        line-height: 1.5em;
+  .heroText {
+    position: absolute;
+    top: 30%;
+    background-color: rgba(0, 0, 0, 0.3);
+    max-width: 650px;
+    padding: 3em;
+    padding-left: 15em;
+    h2 {
+      max-width: 280px;
+      margin: 0 auto;
+      font-size: 2.2em;
+      color: #fff;
+      text-align: left;
+      font-weight: 700;
+      line-height: 1.2em;
+      padding-bottom: 0.8em;
+    }
+
+    p {
+      max-width: 280px;
+      margin: 0 auto;
+      text-align: left;
+      font-size: 1em;
+      color: #fff;
+      font-weight: 300;
+      line-height: 1.5em;
+    }
+  }
+
+
+  @media screen and (max-width: 1660px){
+    .heroText{
+      top: 20%;
+    }
+  }
+
+  @media screen and (max-width: 1385px){
+    .heroText{
+      top: 25%
+    }
+  }
+
+  @media screen and (max-width: 1240px){
+    .heroText{
+      top: 20%;
+    }
+  }
+
+  @media screen and (max-width: 1100px){
+    .heroText{
+      position: unset;
+      background-color: #000;
+      max-width: 100%;
+      padding: 0;
+    }
+  } 
+
+
+  @media screen and (max-width: 968px){
+    .hItems{
+      .navBar{
+        position: relative;
+        .nav{
+          display: none;
+          position: absolute;
+          top: 20%;
+          right: 60px;
+          z-index: 100;
+          background-color: #b50014;
+          animation: normal;
+        }
+
+        .icon{
+          position: absolute;
+          right: 50px;
+          display: block;
+        }
       }
     }
   }
-}
+
+
+
+

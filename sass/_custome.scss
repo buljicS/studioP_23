@@ -13,7 +13,6 @@
 
     .cusRight{
         flex: 50%;
-        text-align: center;
         align-self: center;
         .crTxt{
             max-width: 480px;
@@ -29,6 +28,27 @@
             h3{
                 font-size: 1.4em;
                 padding-bottom: 1em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .custome{
+        flex-direction: column-reverse;
+        .cusRight{
+            padding: 3em 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .custome{
+        .cusRight{
+            .crTxt{
+                text-align: center;
+                font-size: 1.2em;
+                line-height: 1.7em;
             }
         }
     }

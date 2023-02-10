@@ -10,7 +10,10 @@
   margin-top: 7em;
   z-index: 1;
 }
-.hItems .navBar .nav {
+.hItems .navBar .icon {
+  display: none;
+}
+.hItems .nav {
   padding: 2em 0;
   display: flex;
   flex-direction: row;
@@ -19,38 +22,41 @@
   list-style: none;
   gap: 1em;
 }
-.hItems .navBar .nav .navItems .navLink {
+.hItems .nav .navItems .navLink {
   text-decoration: none;
   font-size: 16px;
   color: #fff;
   font-weight: 700;
 }
-.hItems .navBar .nav .navItems .download {
+.hItems .nav .navItems .download {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.3em;
   font-size: 14px;
 }
-.hItems .workTime {
+
+.workTime {
   background-color: #252525;
   padding: 0.8em 0;
   font-size: 14px;
   color: #fff;
   text-align: right;
 }
-.hItems .workTime .maxWidth {
+.workTime .maxWidth {
   max-width: 1200px;
   margin: 0 auto;
 }
-.hItems .hero {
+
+.hero {
   position: relative;
 }
-.hItems .hero img {
+.hero img {
   display: block;
   width: 100%;
 }
-.hItems .hero .heroText {
+
+.heroText {
   position: absolute;
   top: 30%;
   background-color: rgba(0, 0, 0, 0.3);
@@ -58,7 +64,7 @@
   padding: 3em;
   padding-left: 15em;
 }
-.hItems .hero .heroText h2 {
+.heroText h2 {
   max-width: 280px;
   margin: 0 auto;
   font-size: 2.2em;
@@ -68,7 +74,7 @@
   line-height: 1.2em;
   padding-bottom: 0.8em;
 }
-.hItems .hero .heroText p {
+.heroText p {
   max-width: 280px;
   margin: 0 auto;
   text-align: left;
@@ -78,6 +84,48 @@
   line-height: 1.5em;
 }
 
+@media screen and (max-width: 1660px) {
+  .heroText {
+    top: 20%;
+  }
+}
+@media screen and (max-width: 1385px) {
+  .heroText {
+    top: 25%;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .heroText {
+    top: 20%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .heroText {
+    position: unset;
+    background-color: #000;
+    max-width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 968px) {
+  .hItems .navBar {
+    position: relative;
+  }
+  .hItems .navBar .nav {
+    display: none;
+    position: absolute;
+    top: 20%;
+    right: 60px;
+    z-index: 100;
+    background-color: #b50014;
+    animation: normal;
+  }
+  .hItems .navBar .icon {
+    position: absolute;
+    right: 50px;
+    display: block;
+  }
+}
 .dryAged {
   padding: 5em 0;
   background-color: #000;
@@ -139,6 +187,37 @@
   gap: 1.1em;
 }
 
+@media only screen and (max-width: 1100px) {
+  .dryAged {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .dryAged .daRight {
+    margin: 0 auto;
+    padding: 4em 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .dryAged {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .dryAged .daLeft .daTxt .daButtons {
+    align-items: center;
+  }
+  .dryAged .daRight .daIMG {
+    align-items: center;
+    text-align: center;
+  }
+  .dryAged .daRight .daIMG img {
+    width: 80%;
+  }
+  .dryAged .daRight .daIMG .botIMG {
+    width: 80%;
+  }
+}
 .grillkurs {
   display: flex;
   background-color: #A62120;
@@ -186,6 +265,15 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 1100px) {
+  .grillkurs {
+    flex-direction: column;
+    padding-top: 3em;
+  }
+  .grillkurs .grillleft {
+    padding-bottom: 3em;
+  }
+}
 .dh {
   text-align: center;
   color: #fff;
@@ -227,7 +315,22 @@
   gap: 1em;
   padding-bottom: 16em;
 }
+.dh .bot .g1 {
+  display: flex;
+  gap: 1em;
+}
+.dh .bot .g2 {
+  display: flex;
+  gap: 1em;
+}
 
+@media only screen and (max-width: 1150px) {
+  .dh .bot {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .custome {
   display: flex;
   background-color: #A62120;
@@ -242,7 +345,6 @@
 }
 .custome .cusRight {
   flex: 50%;
-  text-align: center;
   align-self: center;
 }
 .custome .cusRight .crTxt {
@@ -261,12 +363,27 @@
   padding-bottom: 1em;
 }
 
+@media only screen and (max-width: 1100px) {
+  .custome {
+    flex-direction: column-reverse;
+  }
+  .custome .cusRight {
+    padding: 3em 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .custome .cusRight .crTxt {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.7em;
+  }
+}
 .fleischversand {
   height: 50vh;
-  background-image: url("../img/krmetina.png");
+  background-image: url("../img/meat.png");
   background-color: black;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -292,7 +409,7 @@
 .genussnetz {
   background-color: #000;
   text-align: center;
-  padding: 8em 0;
+  padding-top: 7em;
 }
 .genussnetz .geContent {
   color: #fff;
@@ -300,7 +417,7 @@
   align-items: center;
   justify-content: center;
   gap: 20em;
-  padding: 8em 0;
+  padding-bottom: 16em;
 }
 .genussnetz .geContent .geTxt {
   text-align: left;
@@ -320,6 +437,18 @@
   color: #fff;
 }
 
+@media only screen and (max-width: 1100px) {
+  .genussnetz {
+    padding: 4em 0;
+  }
+  .genussnetz .geContent {
+    flex-direction: column;
+    gap: 3em;
+  }
+  .genussnetz .geContent .geTxt {
+    text-align: center;
+  }
+}
 .award {
   background-color: #000;
   color: #fff;

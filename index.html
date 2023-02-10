@@ -9,33 +9,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Brath</title>
   </head>
   <body>
     <!--Header-->
     <header class="hItems">
+      
       <nav class="navBar">
         <img id="logo" src="./img/logo.svg" alt="Brath" />
-        <ul class="nav">
-          <li class="navItems">
-            <a href="#" class="navLink">Die Metzgerei</a>
-          </li>
+
+        <ul class="nav" id="nav">
+          <li class="navItems"><a href="#" class="navLink">Die Metzgerei</a></li>
           <li class="navItems"><a href="#" class="navLink">Dry Aged</a></li>
-          <li class="navItems">
-            <a href="#" class="navLink">Fleischversand</a>
-          </li>
+          <li class="navItems"><a href="#" class="navLink">Fleischversand</a></li>
           <li class="navItems"><a href="#" class="navLink">Events/Kurse</a></li>
           <li class="navItems"><a href="#" class="navLink">Partyservice</a></li>
           <li class="navItems"><a href="#" class="navLink">Tagesessen</a></li>
           <li class="navItems"><a href="#" class="navLink">Impressum</a></li>
           <li class="navItems"><a href="#" class="navLink">Kontakt</a></li>
-          <li class="navItems">
-            <a href="" class="navLink download">
-              <img src="./img/navDowload.svg" alt="download icon" />
-              download</a>
-          </li>
+          <li class="navItems"><a href="" class="navLink download"><img src="./img/navDowload.svg" alt="download icon"/>download</a></li>
         </ul>
+
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+
       </nav>
 
       <section class="workTime">
@@ -49,14 +48,14 @@
 
       <div class="hero">
         <img src="./img/headerIMG.jpg" alt="header">
-        <div class="heroText">
-          <h2>Heiko Brath Metzgermeister</h2>
-          <p>
-            Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit
-            argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam
-            Aperol Spritz probatus pertinax.
-          </p>
-        </div>
+      </div>
+      <div class="heroText">
+        <h2>Heiko Brath Metzgermeister</h2>
+        <p>
+          Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit
+          argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam
+          Aperol Spritz probatus pertinax.
+        </p>
       </div>
     </header>
     <!--Header-->
@@ -150,10 +149,15 @@
         </div>
 
         <div class="bot">
-          <img src="./img/Group 661@2x.png" alt="g61.png" />
+          <div class="g1">
+            <img src="./img/Group 661@2x.png" alt="g61.png" />
           <img src="./img/Group 660@2x.png" alt="g60.png" />
-          <img src="./img/Group 659@2x.png" alt="g59.png" />
-          <img src="./img/Group 658@2x.png" alt="g58.png" />
+          </div>
+          <div class="g2">
+                <img src="./img/Group 659@2x.png" alt="g59.png" />
+                <img src="./img/Group 658@2x.png" alt="g58.png" />
+          </div>
+
         </div>
       </section>
       <!--das handwerk-->
@@ -197,9 +201,9 @@
 
       <!--Fleischversand-->
       <section class="fleischversand">
-        <h2>Fleischversand</h2>
+        <h2 class="rellax">Fleischversand</h2>
         <button class="flbtn">Jetzt bestellen</button>
-      </section>
+      </section> 
       <!--Fleischversand-->
 
       <!--genussnetz-->
@@ -346,4 +350,12 @@
       </footer>
     <!--Footer-->
   </body>
+
+
+
+  <script src="./app/hamburger.js"></script> 
+  <script src="./app/rellax.js"></script>
+  <script>
+
+  </script>
 </html>
