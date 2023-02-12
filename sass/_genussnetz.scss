@@ -1,7 +1,7 @@
 .genussnetz{
     background-color: #000;
     text-align: center;
-    padding-top: 7em;
+    padding: 7em 0;
 
     .geContent{
         color: #fff;
@@ -9,7 +9,7 @@
         align-items: center;
         justify-content: center;
         gap: 20em;
-        padding-bottom: 16em;
+        //padding-bottom: 16em;
 
         .geTxt{
             text-align: left;
@@ -35,13 +35,28 @@
 
 @media only screen and (max-width: 1100px){
     .genussnetz{
-        padding: 4em 0;
         .geContent{
             flex-direction: column;
-            gap: 3em;
-
+            gap: 10em;
             .geTxt{
                 text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .genussnetz{
+        .geContent{
+            .geTxt{
+                h2{
+                    font-size: 1.8em;
+                }
+            }
+            .geLogo{
+                img{
+                    width: 90%;
+                }
             }
         }
     }

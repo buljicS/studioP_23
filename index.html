@@ -1,67 +1,76 @@
 <!DOCTYPE html>
-<html lang="deutsch">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./sass/style.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Brath</title>
   </head>
   <body>
-    <!--Header-->
-    <header class="hItems">
-      
-      <nav class="navBar">
-        <img id="logo" src="./img/logo.svg" alt="Brath" />
+    <header>
+      <div class="navigation-panel">
+        <div class="subcontainer">
+          <nav class="navbar">
+            <img src="./img/logo.svg" alt="logo" class="navbarLogo">
+            <ul class="navMenu">
+              <li class="nav-item"><a href="#" class="nav-link">Die Metzgerei</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Dry Aged</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Fleischversand</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Events/Kurse</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Partyservice</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Tagesessen</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Impressum</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
+            </ul>
+            <a href="#" class="download"><img src="./img/navDowload.svg" alt="download icon"/>download</a>
 
-        <ul class="nav" id="nav">
-          <li class="navItems"><a href="#" class="navLink">Die Metzgerei</a></li>
-          <li class="navItems"><a href="#" class="navLink">Dry Aged</a></li>
-          <li class="navItems"><a href="#" class="navLink">Fleischversand</a></li>
-          <li class="navItems"><a href="#" class="navLink">Events/Kurse</a></li>
-          <li class="navItems"><a href="#" class="navLink">Partyservice</a></li>
-          <li class="navItems"><a href="#" class="navLink">Tagesessen</a></li>
-          <li class="navItems"><a href="#" class="navLink">Impressum</a></li>
-          <li class="navItems"><a href="#" class="navLink">Kontakt</a></li>
-          <li class="navItems"><a href="" class="navLink download"><img src="./img/navDowload.svg" alt="download icon"/>download</a></li>
-        </ul>
-
-        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </a>
-
-      </nav>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </div>
+      </div>
 
       <section class="workTime">
         <div class="maxWidth">
           <img src="./img/clock.svg" alt="clock.svg" />
-          <span>
-            <span style="font-weight: bold;">Opentime:</span> Di. - Fr.: 07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30
-            </span>
+            <span><span style="font-weight: bold;">Opentime:</span> Di. - Fr.: 07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30</span>
         </div>
       </section>
-
-      <div class="hero">
-        <img src="./img/headerIMG.jpg" alt="header">
-      </div>
-      <div class="heroText">
-        <h2>Heiko Brath Metzgermeister</h2>
-        <p>
-          Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit
-          argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam
-          Aperol Spritz probatus pertinax.
-        </p>
-      </div>
     </header>
-    <!--Header-->
-
-    <!--Main-->
     <main>
+      <section class="hero">       
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="headerIMG" src="./img/headerIMG.jpg" alt="gg"></div>
+            <div class="swiper-slide"><img class="headerIMG" src="./img/headerIMG.jpg" alt="gg"></div>
+            <div class="swiper-slide"><img class="headerIMG" src="./img/headerIMG.jpg" alt="gg"></div>
+            <div class="swiper-slide"><img class="headerIMG" src="./img/headerIMG.jpg" alt="gg"></div>
+            <div class="swiper-slide"><img class="headerIMG" src="./img/headerIMG.jpg" alt="gg"></div>
+          </div>
+  
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>   
+        
+        <div class="heroText">
+          <h2>Heiko Brath Metzgermeister</h2>
+          <p>
+            Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit
+            argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam
+            Aperol Spritz probatus pertinax.
+          </p>
+        </div>
+      </section>
       <!--dryaged-->
         <section class="dryAged">
           <div class="daLeft">
@@ -119,14 +128,13 @@
           <img src="./img/victoria.jpg" alt="victoria" />
         </div>
       </section>
-      <!--fleischversand-->
+      <!--grillkurs-->
 
       <!--das_handwerk-->
       <section class="dh">
         <div class="top">
           <h2>Das Handwerk</h2>
           <h4>alles über unsere Hausgemachte Produkte</h4>
-
           <div class="topText">
             <p>
               Halt amet, consectetur Handtasche elit, sed do eiusmod tempor
@@ -145,19 +153,18 @@
         </div>
 
         <div class="mid">
-          <img src="./img/vonal 1.svg" alt="mid break" />
+          <img class="vonal" src="./img/vonal 1.svg" alt="mid break" />
         </div>
 
         <div class="bot">
           <div class="g1">
-            <img src="./img/Group 661@2x.png" alt="g61.png" />
-          <img src="./img/Group 660@2x.png" alt="g60.png" />
+            <img src="./img/wurstchen.png" alt="g61.png" />
+          <img src="./img/hahnchen.png" alt="g60.png" />
           </div>
           <div class="g2">
-                <img src="./img/Group 659@2x.png" alt="g59.png" />
-                <img src="./img/Group 658@2x.png" alt="g58.png" />
+                <img src="./img/shwein.png" alt="g59.png" />
+                <img src="./img/rind.png" alt="g58.png" />
           </div>
-
         </div>
       </section>
       <!--das handwerk-->
@@ -165,10 +172,7 @@
       <!--custome-->
       <section class="custome">
         <div class="cusLeft">
-          <img
-            src="./img/4541cc99083f618a22b772228f8a9698@2x 1.png"
-            alt="spices"
-          />
+          <img src="./img/spices.png" alt="spices" />
         </div>
 
         <div class="cusRight">
@@ -179,11 +183,7 @@
             <p>
               Odio principes iracundia Müller Rice pri. Ut vel solum mandamus,
               Kartoffelkopf natum adversarium ei ius, diam Schmetterling
-              honestatis eum. Wiener Schnitzel amet, consectetur Handtasche elit,
-              sed do eiusmod tempor Stuttgart ut labore et dolore magna 99
-              Luftballons Ut enim ad minim veniam, Turnbeutel nostrud exercitation
-              ullamco laboris nisi Sprechen Sie deutsch aliquip ex ea commodo
-              consequat.
+              honestatis eum. 
             </p>
             <br>
             <p>
@@ -194,16 +194,15 @@
               consequat.
             </p>
           </div>
-
         </div>
       </section>
       <!--custome-->
 
       <!--Fleischversand-->
-      <section class="fleischversand">
-        <h2 class="rellax">Fleischversand</h2>
-        <button class="flbtn">Jetzt bestellen</button>
-      </section> 
+          <section class="fleischversand">
+              <h2>Fleischversand</h2>
+              <button class="flbtn">Jetzt bestellen</button>
+          </section> 
       <!--Fleischversand-->
 
       <!--genussnetz-->
@@ -217,40 +216,54 @@
             <h2>Metzgerei Brath ist Mitglied <br />im Genussnetzwerk</h2>
             <button class="gebtn">Gehen zu site</button>
           </div>
-        </div>
-        <img src="./img/vonal 1.svg" alt="vonal" />
+        </div>    
       </section>
       <!--genussnetz-->
 
+      <div class="break">
+        <img class="vonal" src="./img/vonal 1.svg" alt="vonal" />
+      </div>
 
-        <!--award_section-->
+      <!--award_section-->
       <section class="award">
-            <div class="awardCon">
-              <h2>Auszeichnungen</h2>
+        <h2>Auszeichnungen</h2>
+        <div class="awBot">
+          <div class="awLeft">
+            <div class="inner">
+              <img class="awIMG"src="./img/nagrada1.png" alt="n1" />
+              <p class="contentP">Tollit argumentum genau <br> Saepe lobortis</p>
 
-              <div class="contentBot">
-                <img class="awIMG"src="./img/nagrada1.png" alt="n1" />
-                <p class="contentP">Tollit argumentum genau <br> Saepe lobortis</p>
-              </div>
-
-              <div class="contentBot">
-                <img class="awIMG" src="./img/nagrada2.svg" alt="n2" />
-                <p class="contentP">Schneewittchen <br> denique</p>
-              </div>
-
-              <div class="contentTop">
-                <img class="awIMG"src="./img/nagrada3.png" alt="n3" />
-                <p class="contentP">Grimms Märchen <br> expetenda</p>
-              </div>
-
-              <div class="contentTop">
-                <img class="awIMG" src="./img/nagrada4.png" alt="n4" />
-                <p class="contentP">Mettwurst mei <br> ullum gloriatur.</p>
-              </div>
             </div>
-            <img id="vonal"src="./img/vonal 1.svg" alt="vonal" />
+          </div>
+
+          <div class="awRight">
+            <div class="inner">
+              <img class="awIMG" src="./img/nagrada2.png" alt="n2" />
+              <p class="contentP">Schneewittchen <br> denique</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="awTop">
+          <div class="awLeft">
+            <div class="inner"></div>
+            <img class="awIMG"src="./img/nagrada3.png" alt="n3" />
+            <p class="contentP">Grimms Märchen <br> expetenda</p>
+          </div>
+
+          <div class="awRight">
+            <div class="inner">
+              <img class="awIMG" src="./img/nagrada4.png" alt="n4" />
+              <p class="contentP">Mettwurst mei <br> ullum gloriatur.</p>
+            </div>
+          </div>
+        </div>
       </section>
       <!--award_section-->
+
+      <div class="break">
+        <img class="vonal" src="./img/vonal 1.svg" alt="vonal" />
+      </div>
 
       <!--comment_section-->
         <section class="comments">
@@ -284,8 +297,8 @@
                   <span class="title">Koch</span>
                 </p>
               </div>
-              <img id="quote" src="./img/znak.svg" alt="quote">
-              <img id="leftClick" src="./img/leftcursor.svg" alt="left">
+                <img id="quote" src="./img/znak.svg" alt="quote">
+                <img id="leftClick" src="./img/leftcursor.svg" alt="left">
                 <img id="rightClick" src="./img/rightCursor.svg" alt="right">
             </div>
 
@@ -349,13 +362,12 @@
         </div>
       </footer>
     <!--Footer-->
-  </body>
 
+    <script src="./js/hamburger.js"></script>
 
-
-  <script src="./app/hamburger.js"></script> 
-  <script src="./app/rellax.js"></script>
-  <script>
-
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/rellax.js"></script>
+  </body> 
 </html>

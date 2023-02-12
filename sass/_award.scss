@@ -1,26 +1,37 @@
 .award{
-    //padding: 8em 0;
     background-color: #000;
     color: #fff;
     text-align: center;
+    padding: 8em 0;
 
-    .awardCon{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+
+    .awTop{
         display: flex;
+        gap: 2em;
         align-items: center;
-        justify-content: center;
-        gap: 5em;
-        text-align: center;
-
-        .awIMG{
-            padding-bottom: 1em;
-        }
-        .contentP{
-            font-weight: 300;
-            line-height: 1.7em;
-        }
     }
 
-    #vonal{
-        padding-top: 8em;
+    .awBot{
+        display: flex;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .contentP{
+        font-weight: 300;
+        text-align: center;
+        line-height: 2em;
+        color: rgba($color: #fff, $alpha: 0.5)
+    }
+}
+
+@media only screen and (max-width: 968px){
+    .award{
+        flex-direction: column-reverse;
     }
 }

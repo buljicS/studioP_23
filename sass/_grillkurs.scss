@@ -64,3 +64,24 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px){
+    .grillleft{
+        align-self: center;
+        text-align: center;
+        .glTxt{
+            text-align: center !important;
+            h2{
+                font-size: 1.5em !important;
+            }
+
+            ul{
+                li{
+                    .lItem{
+                        font-size: 3.5em;
+                    }
+                }
+            }
+        }
+    }    
+}

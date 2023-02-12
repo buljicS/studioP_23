@@ -4,6 +4,7 @@
   background-color: #000;
   color: #fff;
   text-align: center;
+  justify-content: center;
   gap: 2em;
   padding-bottom: 8em;
 
@@ -31,10 +32,9 @@
       position: relative;
       font-weight: 300;
       line-height: 24px;
-      height: 480px;
       background-color: #333;
       max-width: 500px;
-      padding: 5em 2em;
+      padding: 2em 5em;
 
       .cardText {
         .comment {
@@ -83,6 +83,14 @@
     }
 
     .inactive {
+      background-color: #222;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-emphasis: center;
+      font-weight: 300;
+      line-height: 1.5em;
+
       .comment{
         padding-bottom: 2em;
         padding: 2em;
@@ -93,22 +101,14 @@
         font-weight: 400;
       }
 
-      height: 290px;
       max-width: 480px;
       margin: auto 0;
-      padding: 10em 4em;
       padding: 5em 2em;
 
       img {
         display: none;
       }
-      background-color: #111;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-emphasis: center;
-      font-weight: 300;
-      line-height: 1.5em;
+
     }
   }
 
@@ -128,3 +128,43 @@
     }
   }
 }
+
+@media only screen and (max-width: 968px){
+  .comments{
+    .cards{
+      .inactive{
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .comments{
+    .cards{
+      max-width: unset;
+      padding: 2em;
+      padding-bottom: 5em;
+      .active{
+        padding: 1em 0.5em;
+        background-color: #222;
+        #quote{
+          display: none;
+        }
+        #leftClick{
+          top: 107%;
+          left: 32%;
+          width: 15%;
+        }
+
+        #rightClick{
+          top: 107%;
+          right: 32%;
+          width: 15%;
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,4 +1,5 @@
 @import "header";
+@import "hero";
 @import "dryaged";
 @import "grillkurs";
 @import "dh";
@@ -8,6 +9,7 @@
 @import "award";
 @import "comments";
 @import "footer";
+
 
 *{
     padding: 0;
@@ -24,3 +26,17 @@
     max-width: 1320px;
     margin: 0 auto;
 }
+
+.vonal{
+    width: 80%;
+}
+
+.break{
+    text-align: center;
+    background-color: black;
+    img{
+        width: 80%;
+    }
+}
+
+
