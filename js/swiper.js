@@ -20,7 +20,9 @@ var swiperComment = new Swiper(".swipeComments", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
+  initialSlide: 1,
   slidesPerView: "auto",
+
   coverflowEffect: {
   rotate: 0,
   stretch: 0,

@@ -25,6 +25,7 @@
     }
 
     .swipeComments{
+      padding: 7em 0;
       position: relative;
 
       #rightClick{
@@ -47,6 +48,7 @@
         }
       }
       .swiper-wrapper{
+        
         .swiper-slide{
           max-width: 580px;
           margin: 0 auto;
@@ -119,6 +121,97 @@
     }
 }
 
+@media only screen and (max-width: 1480px){
+  .comments{
+    .swipeComments{
+      #rightClick{
+        right: 20%;
+      }
+
+      #leftClick{
+        left: 20%;
+      }
+      .swiper-wrapper{
+        max-width: 900px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  .comments{
+    .swipeComments{
+      #rightClick{
+        right: 5%;
+      }
+
+      #leftClick{
+        left: 5%;
+      }
+      .swiper-wrapper{
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .comments{
+    .swipeComments{
+
+      #rightClick{
+        top: 87%;
+        width: 15%;
+        right: 31%;
+      }
+
+      #leftClick{
+        top: 87%;
+        width: 15%;
+        left: 31%;
+      }
+      .swiper-wrapper{
+        max-width: 480px;
+        margin: 0 auto;
+        .swiper-slide{
+          max-width: unset;
+          margin: unset;
+          .card{
+            padding: 1.5em 2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .comments{
+    .swipeComments{
+
+      #rightClick{
+        top: 87%;
+        width: 15%;
+      }
+
+      #leftClick{
+        top: 87%;
+        width: 15%;
+      }
+      .swiper-wrapper{
+        max-width: 310px;
+        margin: 0 auto;
+        .swiper-slide{
+          max-width: unset;
+          margin: unset;
+          .card{
+            padding: 1em 0.4em;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 
