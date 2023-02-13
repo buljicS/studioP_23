@@ -6,20 +6,38 @@
 
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    gap: 5em;
     justify-content: center;
     align-items: center;
-
-    .awTop{
-        display: flex;
-        gap: 2em;
-        align-items: center;
+    .awText{
+        h2{
+            font-size: 2.5em;
+        }
+        
     }
-
-    .awBot{
+    .awContent{
         display: flex;
-        gap: 1em;
-        align-items: center;
+        gap: 3.2em;
+        justify-content: center;
+        
+        .awTop{
+            display: flex;
+            gap: 3.2em;
+            justify-content: center;
+            .awRight{
+                .inner{
+                    #smallPic{
+                        padding-bottom: 0.7em;
+                    }
+                }
+            }
+        }
+
+        .awBot{
+            display: flex;
+            gap: 5em;
+            justify-content: center;
+        }
     }
 
     .contentP{
@@ -30,8 +48,25 @@
     }
 }
 
-@media only screen and (max-width: 968px){
+@media only screen and (max-width: 1200px){
     .award{
-        flex-direction: column-reverse;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .awContent{
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .award{
+
+        .contentP{
+            line-height: 1.4em;
+        }
     }
 }

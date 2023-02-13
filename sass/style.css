@@ -84,6 +84,10 @@ header .workTime .themeToggle:hover {
   header .navigation-panel .subcontainer .navbar .navbarLogo {
     left: 0;
   }
+  header .workTime {
+    padding: 1.5em 0;
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 1140px) {
   header .navigation-panel .subcontainer .navbar {
@@ -121,7 +125,7 @@ header .workTime .themeToggle:hover {
   header .navigation-panel .subcontainer .navbar .navMenu {
     position: fixed;
     right: -100%;
-    top: 100px;
+    top: 60px;
     gap: 0;
     flex-direction: column;
     align-items: center;
@@ -135,6 +139,25 @@ header .workTime .themeToggle:hover {
   }
   header .navigation-panel .subcontainer .navbar .navMenu.active {
     right: 0;
+  }
+}
+@media only screen and (max-width: 1340px) {
+  header .navigation-panel .subcontainer .navbar .navbarLogo {
+    left: 0;
+  }
+  header .workTime {
+    padding: 1.5em 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 530px) {
+  header .workTime {
+    padding: 1.5em 0;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  header .workTime .themeToggle {
+    margin-top: 1em;
   }
 }
 .hero {
@@ -635,19 +658,30 @@ header .workTime .themeToggle:hover {
   padding: 8em 0;
   display: flex;
   flex-direction: row;
-  gap: 2em;
+  gap: 5em;
   justify-content: center;
   align-items: center;
 }
-.award .awTop {
-  display: flex;
-  gap: 2em;
-  align-items: center;
+.award .awText h2 {
+  font-size: 2.5em;
 }
-.award .awBot {
+.award .awContent {
   display: flex;
-  gap: 1em;
-  align-items: center;
+  gap: 3.2em;
+  justify-content: center;
+}
+.award .awContent .awTop {
+  display: flex;
+  gap: 3.2em;
+  justify-content: center;
+}
+.award .awContent .awTop .awRight .inner #smallPic {
+  padding-bottom: 0.7em;
+}
+.award .awContent .awBot {
+  display: flex;
+  gap: 5em;
+  justify-content: center;
 }
 .award .contentP {
   font-weight: 300;
@@ -656,9 +690,21 @@ header .workTime .themeToggle:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 1200px) {
   .award {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .award .awContent {
     flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .award .contentP {
+    line-height: 1.4em;
   }
 }
 .comments {
@@ -922,8 +968,8 @@ footer .dimmedtrack .studioPresent {
 }
 
 .swiper-button-next {
-  top: 94% !important;
-  right: 44% !important;
+  top: 93% !important;
+  right: 43% !important;
   --swiper-navigation-size: 20px;
   --swiper-theme-color: #fff;
   border: 2px solid white;
@@ -932,8 +978,8 @@ footer .dimmedtrack .studioPresent {
 }
 
 .swiper-button-prev {
-  top: 94% !important;
-  left: 44% !important;
+  top: 93% !important;
+  left: 43% !important;
   --swiper-navigation-size: 20px;
   --swiper-theme-color: #fff;
   border: 2px solid white;
@@ -941,6 +987,36 @@ footer .dimmedtrack .studioPresent {
   padding: 1em;
 }
 
+@media only screen and (max-width: 1550px) {
+  .swiper-button-next {
+    top: 92% !important;
+    right: 41% !important;
+  }
+  .swiper-button-prev {
+    top: 92% !important;
+    left: 41% !important;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .swiper-button-next {
+    top: 91% !important;
+    right: 41% !important;
+  }
+  .swiper-button-prev {
+    top: 91% !important;
+    left: 41% !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .swiper-button-next {
+    top: 90% !important;
+    right: 40% !important;
+  }
+  .swiper-button-prev {
+    top: 90% !important;
+    left: 40% !important;
+  }
+}
 @media only screen and (max-width: 1100px) {
   .swiper-button-next {
     display: none !important;
@@ -962,10 +1038,10 @@ footer .dimmedtrack .studioPresent {
 
 @media (max-width: 1100px) {
   .lightMode .hero {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1) !important;
   }
   .lightMode .hero .heroText {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
   }
   .lightMode .hero .heroText h2, .lightMode .hero .heroText p {
     color: #A62120;
@@ -1029,12 +1105,78 @@ footer .dimmedtrack .studioPresent {
 .lightMode .comments {
   background-color: rgba(0, 0, 0, 0.2);
 }
+.lightMode .comments h2 {
+  color: #A62120;
+}
+.lightMode .comments .comFooter .combtn {
+  background-color: #fff;
+  color: #A62120;
+  border: 1px solid #A62120;
+}
 
+.popup {
+  position: fixed;
+  width: 30%;
+  top: 30%;
+  left: 35%;
+  background-color: #A62120;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.5em;
+  box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.35);
+  animation: entrance 0s ease 0s 1 normal forwards;
+  display: none;
+}
+.popup h2 {
+  padding-top: 1em;
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+}
+.popup h6 {
+  padding-top: 5em;
+}
+.popup button {
+  background-color: transparent;
+  font-size: 2em;
+  border: transparent;
+  color: #fff;
+  float: right;
+}
+
+@media only screen and (max-width: 1024px) {
+  .popup h2 {
+    text-align: center;
+    padding-top: 3em;
+    font-size: 0.9em;
+  }
+  .popup p {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .popup {
+    width: 40%;
+  }
+}
+@keyframes entrance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+* button:hover {
+  cursor: pointer;
 }
 * html {
   scroll-behavior: smooth;
