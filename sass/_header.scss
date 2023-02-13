@@ -70,6 +70,22 @@ header{
       max-width: 1200px;
       margin: 0 auto;
     }
+
+    .themeToggle{
+      padding: 0.5em;
+      margin-left: 0.5em;
+      border: 1px solid white;
+      background-color: #A62120;
+      color: #fff;
+      border-radius: 2em;
+      &:hover{
+        cursor: pointer;
+        background-color: white;
+        color: #A62120;
+        border: 1px solid #A62120;
+        transition: 1s ease-in-out;
+      }
+    }
   }
 }
 
@@ -88,12 +104,31 @@ header{
   }
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1140px) {
+  header{
+    .navigation-panel{
+      .subcontainer{
+        .navbar{
+          flex-direction: column;
+          .navMenu{
+            .nav-item{
+              font-size: 0.85em;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 1100px){
   header{
     .navigation-panel{
       padding: 1em;
       .subcontainer{
         .navbar{
+          flex-direction: row;
           justify-content: end;
           .navbarLogo{
             left: 0;

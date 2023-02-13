@@ -42,19 +42,21 @@
       <section class="workTime">
         <div class="maxWidth">
           <img src="./img/clock.svg" alt="clock.svg" />
-            <span><span style="font-weight: bold;">Opentime:</span> Di. - Fr.: 07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30</span>
+          <span><span style="font-weight: bold;">Opentime:</span> Di. - Fr.: 07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30</span>
+          <button onclick="toggle()" class="themeToggle">Leichte tema</button>
         </div>
       </section>
     </header>
+
     <main>
       <section class="hero">       
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><img class="headerIMG" src="./img/headerIMG.jpg" alt="gg"></div>
-            <div class="swiper-slide"><img class="headerIMG" src="./img/headerIMG.jpg" alt="gg"></div>
-            <div class="swiper-slide"><img class="headerIMG" src="./img/headerIMG.jpg" alt="gg"></div>
-            <div class="swiper-slide"><img class="headerIMG" src="./img/headerIMG.jpg" alt="gg"></div>
-            <div class="swiper-slide"><img class="headerIMG" src="./img/headerIMG.jpg" alt="gg"></div>
+            <div class="swiper-slide"><img class="headerIMG" src="./img/emerson-vieira-pqDbQ21C59A-unsplash.jpg" alt="gg"></div>
+            <div class="swiper-slide"><img class="headerIMG" src="./img/emerson-vieira-Qi7NlvF-ZsY-unsplash.jpg" alt="gg"></div>
+            <div class="swiper-slide"><img class="headerIMG" src="./img/emerson-vieira-RO6Ke69Szhg-unsplash.jpg" alt="gg"></div>
+            <div class="swiper-slide"><img class="headerIMG" src="./img/emerson-vieira-Mq1LDuswX2o-unsplash.jpg" alt="gg"></div>
           </div>
   
           <div class="swiper-pagination"></div>
@@ -271,52 +273,61 @@
             <h4>Empfehlungs</h4>
             <h2>Was die Leute über uns sagen</h2>
           </div>
-          <div class="cards">
-            <div class="card3 cardWidth inactive">
-              <p class="comment">
-                Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.
-              </p>
-
-              <p class="user">
-                Maria Kartofeln
-              </p>
-            </div>
-
-            <div class="active">
-              <div class="cardHead">
-                <img src="./img/grillkurs_icon.svg" alt="grill">
-                <img src="./img/zvezdice.svg" alt="zvezdica">
+          <div class="swiper swipeComments">
+            <img id="leftClick" src="./img/leftcursor.svg" alt="left">
+            <img id="rightClick" src="./img/rightCursor.svg" alt="right">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card card1">
+                  <p class="comment">
+                    Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.
+                  </p>
+    
+                  <p class="user">
+                    Maria Kartofeln
+                  </p>
+                </div>
               </div>
 
-              <div class="cardText">
-                <p class="comment">
-                  Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna  Luftballons Ut Turnbeutel nostrud exercitation ullamco .
-                </p>
-                <p class="user">
-                  Halling Tobias<br>
-                  <span class="title">Koch</span>
-                </p>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="cardHead">
+                    <img src="./img/grillkurs_icon.svg" alt="grill">
+                    <img src="./img/zvezdice.svg" alt="zvezdica">
+                  </div>
+    
+                  <div class="cardText">
+                    <p class="comment">
+                      Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna  Luftballons Ut Turnbeutel nostrud exercitation ullamco .
+                    </p>
+                    <p class="user">
+                      Halling Tobias<br>
+                      <span class="title">Koch</span>
+                    </p>
+                  </div>
+                    <img id="quote" src="./img/znak.svg" alt="quote">
+                </div>
               </div>
-                <img id="quote" src="./img/znak.svg" alt="quote">
-                <img id="leftClick" src="./img/leftcursor.svg" alt="left">
-                <img id="rightClick" src="./img/rightCursor.svg" alt="right">
-            </div>
 
-
-            <div class="inactive">
-              <p class="comment">
-                Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.
-              </p>
-              <p class="user">
-                Rene Weinstein
-              </p>
-            </div>
-
+              <div class="swiper-slide">
+                <div class="card card1">
+                  <p class="comment">
+                    Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.
+                  </p>
+                  <p class="user">
+                    Rene Weinstein
+                  </p>
+                </div>
+              </div>
+            </div>   
           </div>
+
+
 
           <div class="comFooter">
             <button class="combtn">Alle Berichte</button>
           </div>
+
         </section>
       <!--comment_section-->
     </main>
@@ -363,11 +374,12 @@
       </footer>
     <!--Footer-->
 
+    <script scr="./js/mode.js"></script>
     <script src="./js/hamburger.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/rellax.js"></script>
+    <script src="./js/lightMode.js"></script>
   </body> 
 </html>

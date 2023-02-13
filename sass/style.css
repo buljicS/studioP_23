@@ -64,17 +64,41 @@ header .workTime .maxWidth {
   max-width: 1200px;
   margin: 0 auto;
 }
+header .workTime .themeToggle {
+  padding: 0.5em;
+  margin-left: 0.5em;
+  border: 1px solid white;
+  background-color: #A62120;
+  color: #fff;
+  border-radius: 2em;
+}
+header .workTime .themeToggle:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #A62120;
+  border: 1px solid #A62120;
+  transition: 1s ease-in-out;
+}
 
 @media only screen and (max-width: 1340px) {
   header .navigation-panel .subcontainer .navbar .navbarLogo {
     left: 0;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1140px) {
+  header .navigation-panel .subcontainer .navbar {
+    flex-direction: column;
+  }
+  header .navigation-panel .subcontainer .navbar .navMenu .nav-item {
+    font-size: 0.85em;
+  }
+}
+@media only screen and (max-width: 1100px) {
   header .navigation-panel {
     padding: 1em;
   }
   header .navigation-panel .subcontainer .navbar {
+    flex-direction: row;
     justify-content: end;
   }
   header .navigation-panel .subcontainer .navbar .navbarLogo {
@@ -123,7 +147,7 @@ header .workTime .maxWidth {
 .hero .heroText {
   z-index: 2;
   position: absolute;
-  top: 30%;
+  top: 20%;
   background-color: rgba(0, 0, 0, 0.3);
   max-width: 650px;
   padding: 3em;
@@ -638,6 +662,7 @@ header .workTime .maxWidth {
   }
 }
 .comments {
+  overflow: hidden !important;
   display: flex;
   flex-direction: column;
   background-color: #000;
@@ -658,12 +683,35 @@ header .workTime .maxWidth {
   font-size: 2.5em;
   padding-bottom: 2em;
 }
-.comments .cards {
+.comments .swipeComments {
+  position: relative;
+}
+.comments .swipeComments #rightClick {
+  z-index: 100;
+  position: absolute;
+  top: 48%;
+  right: 31%;
+}
+.comments .swipeComments #rightClick:hover {
+  cursor: pointer;
+}
+.comments .swipeComments #leftClick {
+  position: absolute;
+  top: 48%;
+  z-index: 100;
+  left: 31%;
+}
+.comments .swipeComments #leftClick:hover {
+  cursor: pointer;
+}
+.comments .swipeComments .swiper-wrapper .swiper-slide {
+  max-width: 580px;
+  margin: 0 auto;
   display: flex;
   gap: 1em;
   justify-content: center;
 }
-.comments .cards .active {
+.comments .swipeComments .swiper-wrapper .swiper-slide .card {
   position: relative;
   font-weight: 300;
   line-height: 24px;
@@ -671,65 +719,32 @@ header .workTime .maxWidth {
   max-width: 500px;
   padding: 2em 5em;
 }
-.comments .cards .active .cardText .comment {
+.comments .swipeComments .swiper-wrapper .swiper-slide .card .cardText .comment {
   padding-bottom: 5em;
 }
-.comments .cards .active .cardHead {
+.comments .swipeComments .swiper-wrapper .swiper-slide .card .cardHead {
   padding-bottom: 1em;
 }
-.comments .cards .active .cardHead img {
+.comments .swipeComments .swiper-wrapper .swiper-slide .card .cardHead img {
   display: block;
   margin: 0 auto;
   padding: 0.5em 0;
 }
-.comments .cards .active .user {
+.comments .swipeComments .swiper-wrapper .swiper-slide .card .user {
   font-weight: 400;
   font-size: 1em;
 }
-.comments .cards .active #quote {
+.comments .swipeComments .swiper-wrapper .swiper-slide .card #quote {
   position: absolute;
   bottom: -22px;
   right: 15px;
 }
-.comments .cards .active #leftClick {
-  position: absolute;
-  top: 50%;
-  left: -2.5em;
+.comments .swipeComments .swiper-wrapper .swiper-slide .card1 .comment {
+  padding-top: 5em;
+  padding-bottom: 7em;
 }
-.comments .cards .active #leftClick:hover {
-  cursor: pointer;
-}
-.comments .cards .active #rightClick {
-  position: absolute;
-  top: 50%;
-  right: -2.5em;
-}
-.comments .cards .active #rightClick:hover {
-  cursor: pointer;
-}
-.comments .cards .inactive {
-  background-color: #222;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  -webkit-text-emphasis: center;
-          text-emphasis: center;
-  font-weight: 300;
-  line-height: 1.5em;
-  max-width: 480px;
-  margin: auto 0;
-  padding: 5em 2em;
-}
-.comments .cards .inactive .comment {
-  padding-bottom: 2em;
-  padding: 2em;
-}
-.comments .cards .inactive .user {
-  color: #666;
-  font-weight: 400;
-}
-.comments .cards .inactive img {
-  display: none;
+.comments .swipeComments .swiper-wrapper .swiper-slide .card1 .user {
+  padding-bottom: 5em;
 }
 .comments .comFooter {
   padding-top: 2em;
@@ -746,35 +761,6 @@ header .workTime .maxWidth {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 968px) {
-  .comments .cards .inactive {
-    display: none;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .comments .cards {
-    max-width: unset;
-    padding: 2em;
-    padding-bottom: 5em;
-  }
-  .comments .cards .active {
-    padding: 1em 0.5em;
-    background-color: #222;
-  }
-  .comments .cards .active #quote {
-    display: none;
-  }
-  .comments .cards .active #leftClick {
-    top: 107%;
-    left: 32%;
-    width: 15%;
-  }
-  .comments .cards .active #rightClick {
-    top: 107%;
-    right: 32%;
-    width: 15%;
-  }
-}
 footer {
   background-color: #B50014;
 }
@@ -853,6 +839,130 @@ footer .dimmedtrack .studioPresent {
     padding: 3em 0;
   }
 }
+.swiper-pagination {
+  padding-bottom: 1em !important;
+}
+
+.swiper-pagination-bullet {
+  width: 0.9em !important;
+  height: 0.9em !important;
+  background-color: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red !important;
+  border: 2px solid white !important;
+}
+
+.swiper-button-next {
+  top: 94% !important;
+  right: 44% !important;
+  --swiper-navigation-size: 20px;
+  --swiper-theme-color: #fff;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 1em;
+}
+
+.swiper-button-prev {
+  top: 94% !important;
+  left: 44% !important;
+  --swiper-navigation-size: 20px;
+  --swiper-theme-color: #fff;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 1em;
+}
+
+@media only screen and (max-width: 1100px) {
+  .swiper-button-next {
+    display: none !important;
+  }
+  .swiper-button-prev {
+    display: none !important;
+  }
+  .swiper-pagination-bullet {
+    display: none !important;
+  }
+}
+.swiper-slide-shadow-left {
+  background-image: none !important;
+}
+
+.swiper-slide-shadow-right {
+  background-image: none !important;
+}
+
+@media (max-width: 1100px) {
+  .lightMode .hero {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .lightMode .hero .heroText {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .lightMode .hero .heroText h2, .lightMode .hero .heroText p {
+    color: #A62120;
+  }
+}
+.lightMode .dryAged {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #A62120;
+}
+.lightMode .dryAged .daLeft .daButtons .drybtn {
+  background-color: #fff;
+  color: #A62120;
+  border: 1px solid #A62120;
+}
+.lightMode .grillkurs {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.lightMode .grillkurs .grillleft .glTxt {
+  color: #A62120;
+}
+.lightMode .grillkurs .grillleft .glTxt .grillbtn {
+  background-color: #fff;
+  color: #A62120;
+  border: 1px solid #A62120;
+}
+.lightMode .dh {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #A62120;
+}
+.lightMode .dh .topText .dhbtn {
+  background-color: #fff;
+  color: #A62120;
+  border: 1px solid #A62120;
+}
+.lightMode .custome {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.lightMode .custome .cusRight {
+  color: #A62120;
+}
+.lightMode .genussnetz {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.lightMode .genussnetz .geTxt h2 {
+  color: #A62120;
+}
+.lightMode .genussnetz .geTxt .gebtn {
+  background-color: #fff;
+  color: #A62120;
+  border: 1px solid #A62120;
+}
+.lightMode .break {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.lightMode .award {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.lightMode .award h2, .lightMode .award p {
+  color: #A62120;
+}
+.lightMode .comments {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 * {
   padding: 0;
   margin: 0;
