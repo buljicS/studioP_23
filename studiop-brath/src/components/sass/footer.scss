@@ -38,6 +38,9 @@ footer{
             .socialIcons{
                 display: flex;
                 gap: 0.5em;
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
     }

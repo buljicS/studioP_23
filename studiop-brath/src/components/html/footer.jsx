@@ -22,31 +22,31 @@ import IG from '../img/ig.svg';
 function footer() {
   return (
     <footer>
-    <div class="container">
-      <div class="contact">
-        <div class="location">
+    <div className="container">
+      <div className="contact">
+        <div className="location">
           <img src={Pin} alt="pin"/>
           <p>Klauprechtstraße 25 <br/> 76137 Karlsruhe, Germany</p>
         </div>
 
-        <div class="phone displayProop">
+        <div className="phone displayProop">
           <img src={Phone} alt="phone"/>
           <p>+49 721 358060</p>
         </div>
 
-        <div class="mail displayProop">
+        <div className="mail displayProop">
           <img src={Mail} alt="mail"/>
           <p>info@partyservice-brath.de</p>
         </div>
       </div>
 
-      <div class="logo">
+      <div className="logo">
         <img src={Logo} alt="logo"/>
       </div>
       
-      <div class="social">
-        <p class="socialP">Besuchen Sie uns auf:</p>
-        <div class="socialIcons">
+      <div className="social">
+        <p className="socialP">Besuchen Sie uns auf:</p>
+        <div className="socialIcons">
           <img src={TW} alt="twitter"/>
           <img src={FB} alt="facebook"/>
           <img src={IG} alt="instagram"/>
@@ -55,9 +55,9 @@ function footer() {
       </div>
     </div>
 
-    <div class="dimmedtrack">
+    <div className="dimmedtrack">
       <p id="copyrightP">© 2020 by Metzgerei Heiko Brath  GmbH, Deutschland</p>
-      <p id="teampP">Code and design by <span class="studioPresent">StudioPresent</span></p>
+      <p id="teampP">Code and design by <span className="studioPresent">StudioPresent</span></p>
     </div>
   </footer>
 

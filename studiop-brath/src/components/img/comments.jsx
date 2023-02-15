@@ -1,30 +1,16 @@
 import React from "react";
 import '../sass/comments.scss';
 
-import lC from '../img/leftcursor.svg';
-import rC from '../img/rightCursor.svg';
-import grill from '../img/grillkurs_icon.svg';
-import star from '../img/zvezdice.svg';
-import quote  from '../img/znak.svg';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, EffectCoverflow } from 'swiper';
-import 'swiper/scss';
-import 'swiper/scss/navigation';
-import 'swiper/scss/effect-coverflow';
-
-
 const comments = () => {
   return (
-
     <section className="comments">
       <div className="comHeader">
         <h4>Empfehlungs</h4>
         <h2>Was die Leute über uns sagen</h2>
       </div>
       <div className="swiper swipeComments">
-        <img id="leftClick" src={lC} alt="left"/>
-        <img id="rightClick" src={rC} alt="right"/>
+        <img id="leftClick" src="./img/leftcursor.svg" alt="left" />
+        <img id="rightClick" src="./img/rightCursor.svg" alt="right" />
         <div className="swiper-wrapper">
           <div className="swiper-slide">
             <div className="card card1">
@@ -41,8 +27,8 @@ const comments = () => {
           <div className="swiper-slide">
             <div className="card">
               <div className="cardHead">
-                <img src={grill} alt="grill"/>
-                <img src={star} alt="zvezdica"/>
+                <img src="./img/grillkurs_icon.svg" alt="grill" />
+                <img src="./img/zvezdice.svg" alt="zvezdica" />
               </div>
 
               <div className="cardText">
@@ -53,17 +39,17 @@ const comments = () => {
                 </p>
                 <p className="user">
                   Halling Tobias
-                  <br/>
+                  <br />
                   <span className="title">Koch</span>
                 </p>
               </div>
-              <img id="quote" src={quote} alt="quote"/>
+              <img id="quote" src="./img/znak.svg" alt="quote" />
             </div>
           </div>
 
           <div className="swiper-slide">
             <div className="card card1">
-              <p className="comment">
+              <p class="comment">
                 Achtung fur atine indoctum complectitur HugoClub Mate mea
                 meliore denique nominavi id. Ohrwurm expetenda nam an, his ei
                 Reise euismod assentior.
@@ -73,8 +59,6 @@ const comments = () => {
           </div>
         </div>
       </div>
-
-
 
       <div className="comFooter">
         <button className="combtn">Alle Berichte</button>

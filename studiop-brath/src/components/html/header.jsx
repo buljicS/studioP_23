@@ -1,9 +1,17 @@
+//core-dependencies
 import React from 'react';
+//core-dependencies
+
+//page-sass
 import '../sass/header.scss';
 import '../sass/lightMode.scss';
+//page-sass
+
+//page-elements
 import Logo from '../img/logo.svg';
 import Clock from '../img/clock.svg';
 import Download from '../img/navDowload.svg';
+//page-elements
 
 const header = () => {
     const hamburger =() => {
@@ -11,12 +19,12 @@ const header = () => {
       const navmenu = document.querySelector(".navMenu");
       hamburger.classList.toggle("active");
       navmenu.classList.toggle("active");
-    
+
 
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navmenu.classList.remove("active");
-}))   
+}))
     }
 
     const toggle = () => {
@@ -42,7 +50,6 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
             <li className="nav-item"><a href="#top" className="nav-link">Kontakt</a></li>
           </ul>
           <a href="#top" class="download"><img src={Download} alt="download icon"/>download</a>
-
           <div onClick={hamburger} class="hamburger">
             <span className="bar"></span>
             <span className="bar"></span>

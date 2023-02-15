@@ -1,28 +1,39 @@
 import React from 'react'
 import '../sass/hero.scss';
+import '../sass/swiperStyle.scss';
+
 import Hero1 from '../img/headerIMG.jpg';
 import Hero2 from '../img/emerson-vieira-pqDbQ21C59A-unsplash.jpg';
 import Hero3 from '../img/emerson-vieira-Qi7NlvF-ZsY-unsplash.jpg';
 import Hero4 from '../img/emerson-vieira-RO6Ke69Szhg-unsplash.jpg';
 import Hero5 from '../img/emerson-vieira-Mq1LDuswX2o-unsplash.jpg';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper';
+
+
+import 'swiper/css';
+import '/node_modules/swiper/modules/navigation/navigation.scss'; // Navigation module
+import '/node_modules/swiper/modules/pagination/pagination.scss';// Pagination module
+
 const hero = () => {
+
   return (
-    <div className="hero">
-        <section className="hero">       
-        <div className="swiper mySwiper">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide"><img className="headerIMG" src={Hero1} alt="hero1" /></div>
-            <div className="swiper-slide"><img className="headerIMG" src={Hero2} alt="hero2" /></div>
-            <div className="swiper-slide"><img className="headerIMG" src={Hero3} alt="hero3" /></div>
-            <div className="swiper-slide"><img className="headerIMG" src={Hero4} alt="hero4" /></div>
-            <div className="swiper-slide"><img className="headerIMG" src={Hero5} alt="hero5" /></div>
-          </div>
-  
-          <div className="swiper-pagination"></div>
-          <div className="swiper-button-prev"></div>
-          <div className="swiper-button-next"></div>
-        </div>   
+        <section className="hero">
+            <Swiper
+                //siwperModules
+                modules={[Pagination, Navigation]}
+                slidesPerView={"auto"}
+                loop = {true}
+                navigation={{}}
+                pagination={{ clickable: true}}
+            >
+            <SwiperSlide><img src={Hero1} alt="Hero"/></SwiperSlide>
+            <SwiperSlide><img src={Hero2} alt="Hero2"/></SwiperSlide>
+            <SwiperSlide><img src={Hero3} alt="Hero3"/></SwiperSlide>
+            <SwiperSlide><img src={Hero4} alt="Hero4"/></SwiperSlide>
+            <SwiperSlide><img src={Hero5} alt="Hero5"/></SwiperSlide>
+            </Swiper>
         
         <div className="heroText">
           <h2>Heiko Brath Metzgermeister</h2>
@@ -33,7 +44,6 @@ const hero = () => {
           </p>
         </div>
       </section>
-    </div>
   )
 }
 

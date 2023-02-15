@@ -1,5 +1,6 @@
-import '../src/components/sass/style.scss';
+import React from "react";
 
+//page-components
 import Header from "./components/html/header";
 import Hero from "./components/html/hero";
 import DryAged from "./components/html/dryaged";
@@ -11,6 +12,8 @@ import Genussnetz from "./components/html/genussnetz";
 import Award from './components/html/award';
 import Comments from './components/html/comments';
 import Footer from './components/html/footer';
+import '../src/components/sass/style.scss';
+//page-components
 
 function App() {
   return (
