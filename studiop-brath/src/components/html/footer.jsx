@@ -37,7 +37,7 @@ function footer() {
         <div className="mail displayProop">
           <img src={Mail} alt="mail"/>
           <p>info@partyservice-brath.de</p>
-        </div>
+        </div>  
       </div>
 
       <div className="logo">

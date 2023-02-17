@@ -3,6 +3,9 @@ import '../sass/genussnetz.scss';
 import Genu from '../img/genussnetz.svg';
 import VonalBreak from '../img/vonal.svg';
 
+import Button from '../elements/btn';
+import '../sass/buttons.scss';
+
 const genussnetz = () => {
   return (
     <div className="app">
@@ -14,7 +17,10 @@ const genussnetz = () => {
 
           <div className="geTxt">
             <h2>Metzgerei Brath ist Mitglied <br />im Genussnetzwerk</h2>
-            <button className="gebtn">Gehen zu site</button>
+            <Button
+              btnClass="btnRed"
+              btnVal="Gehen zu site"
+            />
           </div>
         </div>    
       </section>

@@ -60,6 +60,9 @@
         padding-top: 3em;
 
         .grillleft{
+            .glTxt{
+                text-align: center;
+            }
             padding-bottom: 3em;
         }
     }
@@ -70,7 +73,6 @@
         align-self: center;
         text-align: center;
         .glTxt{
-            text-align: center !important;
             h2{
                 font-size: 1.5em !important;
             }

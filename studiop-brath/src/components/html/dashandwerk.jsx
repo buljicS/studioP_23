@@ -6,6 +6,9 @@ import Han from '../img/hahnchen.png';
 import Schwein from '../img/shwein.png';
 import Rind from '../img/rind.png';
 
+import Button from '../elements/btn';
+import '../sass/buttons.scss';
+
 const dashandwerk = () => {
   return (
     <section className="dh">
@@ -25,7 +28,10 @@ const dashandwerk = () => {
           nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod
           assentior
         </p>
-        <button className="dhbtn">Das Handwerk</button>
+        <Button
+          btnClass="btnRed"
+          btnVal="Das Handwerk"
+        />
       </div>
     </div>
 

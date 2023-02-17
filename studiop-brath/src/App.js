@@ -1,4 +1,5 @@
 import React from "react";
+import '../src/components/sass/style.scss';
 
 //page-components
 import Header from "./components/html/header";
@@ -12,7 +13,7 @@ import Genussnetz from "./components/html/genussnetz";
 import Award from './components/html/award';
 import Comments from './components/html/comments';
 import Footer from './components/html/footer';
-import '../src/components/sass/style.scss';
+
 //page-components
 
 function App() {

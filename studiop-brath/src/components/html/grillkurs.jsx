@@ -2,6 +2,9 @@ import React from 'react'
 import '../sass/grillkurs.scss';
 import VictoriaPic from '../img/victoria.jpg';
 
+import Button from '../elements/btn';
+import '../sass/buttons.scss';
+
 const grillkurs = () => {
   return (
     <section className="grillkurs">
@@ -14,7 +17,10 @@ const grillkurs = () => {
               <li><span className="lItem">1 Tag</span></li>
               <li><span className="lItem">lernen Sie die Kunst des Grillens</span></li>
             </ul>
-            <button className="grillbtn">Grillkurs</button>
+            <Button
+              btnClass="btnWhite"
+              btnVal="Grillkurs"
+            />
         </div>
     </div>
 

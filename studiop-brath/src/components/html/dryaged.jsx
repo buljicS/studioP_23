@@ -1,9 +1,13 @@
 import React from 'react'
 import '../sass/dryaged.scss';
+
 import TopImg from "../img/topImg.jpg";
 import BotImg1 from "../img/botImg.png";
 import BotImg2 from "../img/botImg2.png";
 import BotImg3 from "../img/botImg3.png";
+
+import Button from '../elements/btn';
+import '../sass/buttons.scss';
 
 const dryAged = () => {
   return (
@@ -23,8 +27,15 @@ const dryAged = () => {
           Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an,
           his ei Reise euismod assentior.</p>
           <div className="daButtons">
-            <button className="drybtn">Dry Aged</button>
-            <button className="drybtn">Alte Wutz</button>
+            <Button
+              btnClass="btnRed"
+              btnVal="Dry Aged"
+            />
+            
+            <Button
+              btnClass="btnRed"
+              btnVal="Alle Wutz"
+            />
         </div>
       </div>
     </div>

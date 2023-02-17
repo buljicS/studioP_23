@@ -1,138 +1,126 @@
 .comments{
-    overflow: hidden !important;
-    display: flex;
-    flex-direction: column;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    justify-content: center;
-    gap: 2em;
-    padding-bottom: 8em;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 8em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
 
-    .comHeader {
-      h4 {
-        color: #555;
-        font-size: 1.2em;
-        font-weight: 700;
-        padding-top: 2em;
-        padding-bottom: 1em;
-      }
-  
-      h2 {
-        font-size: 2.5em;
-        padding-bottom: 2em;
-      }
-    }
-
-    .swipeComments{
-      padding: 7em 0;
-      position: relative;
-
-      #rightClick{
-        z-index: 100;
-        position: absolute;
-        top: 48%;
-        right: 31%;
-        &:hover{
-          cursor: pointer;
-        }
-      }
-    
-      #leftClick{
-        position: absolute;
-        top: 48%;
-        z-index: 100;
-        left: 31%;
-        &:hover{
-          cursor: pointer;
-        }
-      }
-      .swiper-wrapper{
-        
-        .swiper-slide{
-          max-width: 580px;
-          margin: 0 auto;
-          display: flex;
-          gap: 1em;
-          justify-content: center;
-          .card{  
-            position: relative;
-              font-weight: 300;
-              line-height: 24px;
-              background-color: #333;
-              max-width: 500px;
-              padding: 2em 5em;
-        
-              .cardText {
-                .comment {
-                  padding-bottom: 5em;
-                }
-              }
-
-              .cardHead {
-                padding-bottom: 1em;
-                img {
-                  display: block;
-                  margin: 0 auto;
-                  padding: 0.5em 0;
-                }
-              }
-        
-              .user {
-                font-weight: 400;
-                font-size: 1em;
-              }
-        
-              #quote {
-                position: absolute;
-                bottom: -22px;
-                right: 15px;
-              }  
-          }
-
-          .card1{
-            .comment{
-              padding-top: 5em;
-              padding-bottom: 7em;
-            }
-
-            .user{
-              padding-bottom: 5em;
-            }
-          }
-        }
-      }
-    }
-
-    .comFooter {
+  .comHeader {
+    h4 {
+      color: #555;
+      font-size: 1.2em;
+      font-weight: 700;
       padding-top: 2em;
-      .combtn {
-        padding: 0.7em 3em;
-        border: 1px solid #fff;
-        border-radius: 2em;
-        background-color: rgba(166, 33, 32, 1);
-        font-size: 1em;
-        color: #fff;
+      padding-bottom: 1em;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      padding-bottom: 2em;
+    }
+  }
+
+  .swiper{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 10em 0;
+    position: relative;
+    #rightClick{
+      z-index: 100;
+      position: absolute;
+      top: 48%;
+      right: 32%;
+      &:hover{
+        cursor: pointer;
+      }
+    }
   
-        &:hover {
-          cursor: pointer;
+    #leftClick{
+      position: absolute;
+      top: 48%;
+      z-index: 100;
+      left: 32%;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .swiper-wrapper{
+      .swiper-slide{
+        max-width: 580px;
+        margin: 0 auto;
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+
+        .card{  
+          position: relative;
+            font-weight: 300;
+            line-height: 24px;
+            background-color: #333;
+            max-width: 500px;
+            padding: 2em 5em;
+      
+            .cardText {
+              .comment {
+                padding-bottom: 5em;
+              }
+            }
+
+            .cardHead {
+              padding-bottom: 1em;
+              img {
+                display: block;
+                margin: 0 auto;
+                padding: 0.5em 0;
+              }
+            }
+      
+            .user {
+              font-weight: 400;
+              font-size: 1em;
+            }
+      
+            #quote {
+              position: absolute;
+              bottom: -22px;
+              right: 15px;
+            }  
+        }
+
+        .card1{
+          .comment{
+            padding-top: 5em;
+            padding-bottom: 7em;
+          }
+
+          .user{
+            padding-bottom: 5em;
+          }
         }
       }
     }
-}
+  }
 
-@media only screen and (max-width: 1480px){
+  .comFooter {
+    padding-top: 2em;
+    }
+  }
+
+
+@media only screen and (max-width: 1400px){
   .comments{
-    .swipeComments{
+    .swiper{
+      max-width: 1100px;
       #rightClick{
-        right: 20%;
+        right: 25%;
       }
 
       #leftClick{
-        left: 20%;
-      }
-      .swiper-wrapper{
-        max-width: 900px;
+        left: 25%;
       }
     }
   }
@@ -140,81 +128,58 @@
 
 @media only screen and (max-width: 1100px){
   .comments{
-    .swipeComments{
+    .swiper{
+      max-width: 950px;
+
       #rightClick{
-        right: 5%;
+        right: 20%;
       }
 
       #leftClick{
-        left: 5%;
-      }
-      .swiper-wrapper{
-        max-width: 600px;
+        left: 20%;
       }
     }
   }
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 800px){
   .comments{
-    .swipeComments{
-
+    .swiper{
+      max-width: unset;
+      margin: unset;
       #rightClick{
-        top: 87%;
-        width: 15%;
-        right: 31%;
+        top: 89%;
+        right: 35%;
+        width: 10%;
       }
 
       #leftClick{
-        top: 87%;
-        width: 15%;
-        left: 31%;
+        top: 89%;
+        left: 35%;
+        width: 10%;
       }
-      .swiper-wrapper{
-        max-width: 480px;
-        margin: 0 auto;
-        .swiper-slide{
-          max-width: unset;
-          margin: unset;
-          .card{
-            padding: 1.5em 2em;
-          }
-        }
+
+      #quote{
+        display: none;
       }
     }
   }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 400px){
   .comments{
-    .swipeComments{
-
+    .swiper{
       #rightClick{
-        top: 87%;
-        width: 15%;
+        top: 89%;
+        right: 25%;
+        width: 20%;
       }
 
       #leftClick{
-        top: 87%;
-        width: 15%;
-      }
-      .swiper-wrapper{
-        max-width: 310px;
-        margin: 0 auto;
-        .swiper-slide{
-          max-width: unset;
-          margin: unset;
-          .card{
-            padding: 1em 0.4em;
-          }
-        }
+        top: 89%;
+        left: 25%;
+        width: 20%;
       }
     }
   }
 }
-
-
-
-
-
-

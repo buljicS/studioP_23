@@ -33,7 +33,6 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     }
 
   return (
-    <div className="header">
     <header>
     <div className="navigation-panel">
       <div className="subcontainer">
@@ -67,7 +66,6 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
       </div>
     </section>
   </header>
-    </div>
   )
 }
 
