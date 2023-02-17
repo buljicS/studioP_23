@@ -1,10 +1,15 @@
+//core
 import React from "react";
 import "../sass/award.scss";
+//core
+
+//page_components
 import N1 from "../img/nagrada1.png";
 import N2 from "../img/nagrada2.png";
 import N3 from "../img/nagrada3.png";
 import N4 from "../img/nagrada4.png";
-import VonalBreak from '../img/vonal.svg';
+import VonalBreak from "../img/vonal.svg";
+//page_components
 
 const award = () => {
   return (
@@ -53,7 +58,6 @@ const award = () => {
           </div>
         </div>
       </section>
-
 
       <div class="break">
         <img class="vonal" src={VonalBreak} alt="vonal" />

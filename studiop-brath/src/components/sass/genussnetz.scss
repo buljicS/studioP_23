@@ -1,70 +1,70 @@
-.genussnetz{
-    background-color: #000;
-    text-align: center;
-    padding: 7em 0;
+.genussnetz {
+  background-color: #000;
+  text-align: center;
+  padding: 7em 0;
 
-    .geContent{
+  .geContent {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20em;
+
+    .geTxt {
+      text-align: left;
+
+      h2 {
+        font-size: 2em;
+        line-height: 42px;
+        padding-bottom: 1em;
+      }
+
+      .gebtn {
+        padding: 0.7em 2.5em;
+        border: 1px solid #fff;
+        border-radius: 2em;
+        background-color: rgba(166, 33, 32, 1);
+        font-size: 1em;
+        font-weight: 400;
         color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20em;
-
-        .geTxt{
-            text-align: left;
-
-            h2{
-                font-size: 2em;
-                line-height: 42px;
-                padding-bottom: 1em;
-            }
-
-            .gebtn{
-                padding: 0.7em 2.5em;
-                border: 1px solid #fff;
-                border-radius: 2em;
-                background-color: rgba(166, 33, 32, 1);
-                font-size: 1em;
-                font-weight: 400;
-                color: #fff;
-            }
-        }
+      }
     }
+  }
 }
 
-.break{
-    text-align: center;
-    background-color: black;
-    img{
-        width: 80%;
-    }
+.break {
+  text-align: center;
+  background-color: black;
+  img {
+    width: 80%;
+  }
 }
 
-@media only screen and (max-width: 1100px){
-    .genussnetz{
-        .geContent{
-            flex-direction: column;
-            gap: 10em;
-            .geTxt{
-                text-align: center;
-            }
-        }
+@media only screen and (max-width: 1100px) {
+  .genussnetz {
+    .geContent {
+      flex-direction: column;
+      gap: 10em;
+      .geTxt {
+        text-align: center;
+      }
     }
+  }
 }
 
-@media only screen and (max-width: 600px){
-    .genussnetz{
-        .geContent{
-            .geTxt{
-                h2{
-                    font-size: 1.8em;
-                }
-            }
-            .geLogo{
-                img{
-                    width: 90%;
-                }
-            }
+@media only screen and (max-width: 600px) {
+  .genussnetz {
+    .geContent {
+      .geTxt {
+        h2 {
+          font-size: 1.8em;
         }
+      }
+      .geLogo {
+        img {
+          width: 90%;
+        }
+      }
     }
+  }
 }

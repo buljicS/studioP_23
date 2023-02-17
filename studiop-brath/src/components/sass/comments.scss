@@ -1,4 +1,4 @@
-.comments{
+.comments {
   background-color: #000;
   color: #fff;
   text-align: center;
@@ -24,80 +24,80 @@
     }
   }
 
-  .swiper{
+  .swiper {
     max-width: 1500px;
     margin: 0 auto;
     padding: 10em 0;
     position: relative;
-    #rightClick{
+    #rightClick {
       z-index: 100;
       position: absolute;
       top: 48%;
       right: 32%;
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
     }
-  
-    #leftClick{
+
+    #leftClick {
       position: absolute;
       top: 48%;
       z-index: 100;
       left: 32%;
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
     }
-    .swiper-wrapper{
-      .swiper-slide{
+    .swiper-wrapper {
+      .swiper-slide {
         max-width: 580px;
         margin: 0 auto;
         display: flex;
         gap: 1em;
         justify-content: center;
 
-        .card{  
+        .card {
           position: relative;
-            font-weight: 300;
-            line-height: 24px;
-            background-color: #333;
-            max-width: 500px;
-            padding: 2em 5em;
-      
-            .cardText {
-              .comment {
-                padding-bottom: 5em;
-              }
-            }
+          font-weight: 300;
+          line-height: 24px;
+          background-color: #333;
+          max-width: 500px;
+          padding: 2em 5em;
 
-            .cardHead {
-              padding-bottom: 1em;
-              img {
-                display: block;
-                margin: 0 auto;
-                padding: 0.5em 0;
-              }
+          .cardText {
+            .comment {
+              padding-bottom: 5em;
             }
-      
-            .user {
-              font-weight: 400;
-              font-size: 1em;
+          }
+
+          .cardHead {
+            padding-bottom: 1em;
+            img {
+              display: block;
+              margin: 0 auto;
+              padding: 0.5em 0;
             }
-      
-            #quote {
-              position: absolute;
-              bottom: -22px;
-              right: 15px;
-            }  
+          }
+
+          .user {
+            font-weight: 400;
+            font-size: 1em;
+          }
+
+          #quote {
+            position: absolute;
+            bottom: -22px;
+            right: 15px;
+          }
         }
 
-        .card1{
-          .comment{
+        .card1 {
+          .comment {
             padding-top: 5em;
             padding-bottom: 7em;
           }
 
-          .user{
+          .user {
             padding-bottom: 5em;
           }
         }
@@ -107,75 +107,74 @@
 
   .comFooter {
     padding-top: 2em;
-    }
   }
+}
 
-
-@media only screen and (max-width: 1400px){
-  .comments{
-    .swiper{
+@media only screen and (max-width: 1400px) {
+  .comments {
+    .swiper {
       max-width: 1100px;
-      #rightClick{
+      #rightClick {
         right: 25%;
       }
 
-      #leftClick{
+      #leftClick {
         left: 25%;
       }
     }
   }
 }
 
-@media only screen and (max-width: 1100px){
-  .comments{
-    .swiper{
+@media only screen and (max-width: 1100px) {
+  .comments {
+    .swiper {
       max-width: 950px;
 
-      #rightClick{
+      #rightClick {
         right: 20%;
       }
 
-      #leftClick{
+      #leftClick {
         left: 20%;
       }
     }
   }
 }
 
-@media only screen and (max-width: 800px){
-  .comments{
-    .swiper{
+@media only screen and (max-width: 800px) {
+  .comments {
+    .swiper {
       max-width: unset;
       margin: unset;
-      #rightClick{
+      #rightClick {
         top: 89%;
         right: 35%;
         width: 10%;
       }
 
-      #leftClick{
+      #leftClick {
         top: 89%;
         left: 35%;
         width: 10%;
       }
 
-      #quote{
+      #quote {
         display: none;
       }
     }
   }
 }
 
-@media only screen and (max-width: 400px){
-  .comments{
-    .swiper{
-      #rightClick{
+@media only screen and (max-width: 400px) {
+  .comments {
+    .swiper {
+      #rightClick {
         top: 89%;
         right: 25%;
         width: 20%;
       }
 
-      #leftClick{
+      #leftClick {
         top: 89%;
         left: 25%;
         width: 20%;
