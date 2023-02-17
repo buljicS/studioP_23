@@ -9,7 +9,6 @@
 ### `npm run start`
   - Pokretanje react aplikacije
   
- --------------------------------------------------------------------- <br>
  
 <h2>Komponente</h2>
 
