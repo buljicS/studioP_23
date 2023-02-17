@@ -5,8 +5,5 @@ Februar 2023 <br>
 HTML5 <br>
 SASS <br>
 JavaScript <br>
-<<<<<<< HEAD
-React <br>pa
-=======
+React <br>
 ReactJS <br>
->>>>>>> 0ee5489160fe1a90e5b5d50ce3b0e73f619350ad
