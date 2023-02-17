@@ -63,20 +63,24 @@ header .workTime {
 header .workTime .maxWidth {
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.3em;
 }
 header .workTime .themeToggle {
   padding: 0.5em;
   margin-left: 0.5em;
   border: 1px solid white;
-  background-color: #A62120;
+  background-color: #a62120;
   color: #fff;
   border-radius: 2em;
 }
 header .workTime .themeToggle:hover {
   cursor: pointer;
   background-color: white;
-  color: #A62120;
-  border: 1px solid #A62120;
+  color: #a62120;
+  border: 1px solid #a62120;
   transition: 1s ease-in-out;
 }
 
@@ -344,7 +348,7 @@ header .workTime .themeToggle:hover {
 }
 .grillkurs {
   display: flex;
-  background-color: #A62120;
+  background-color: #a62120;
 }
 .grillkurs .grillleft {
   color: #fff;
@@ -372,7 +376,7 @@ header .workTime .themeToggle:hover {
   font-weight: 300;
 }
 .grillkurs .grillleft .glTxt .grillbtn {
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
   border-radius: 2em;
   padding: 0.7em 3em;
   margin-top: 2em;
@@ -498,7 +502,7 @@ header .workTime .themeToggle:hover {
 }
 .custome {
   display: flex;
-  background-color: #A62120;
+  background-color: #a62120;
   color: #fff;
 }
 .custome .cusLeft {
@@ -593,7 +597,7 @@ header .workTime .themeToggle:hover {
   padding: 0.7em 3em;
   background-color: #fff;
   color: #000;
-  border: 1px solid #FF0000;
+  border: 1px solid #ff0000;
   border-radius: 2em;
   max-width: 375px;
   margin: 0 auto;
@@ -737,7 +741,7 @@ header .workTime .themeToggle:hover {
   z-index: 100;
   position: absolute;
   top: 48%;
-  right: 31%;
+  right: 32%;
 }
 .comments .swipeComments #rightClick:hover {
   cursor: pointer;
@@ -746,7 +750,7 @@ header .workTime .themeToggle:hover {
   position: absolute;
   top: 48%;
   z-index: 100;
-  left: 31%;
+  left: 32%;
 }
 .comments .swipeComments #leftClick:hover {
   cursor: pointer;
@@ -875,7 +879,7 @@ header .workTime .themeToggle:hover {
   }
 }
 footer {
-  background-color: #B50014;
+  background-color: #b50014;
 }
 footer .container {
   display: flex;
@@ -899,6 +903,12 @@ footer .container .contact .displayProop {
   align-items: center;
   color: #fff;
 }
+footer .container .contact .phone:hover {
+  cursor: pointer;
+}
+footer .container .contact .mail:hover {
+  cursor: pointer;
+}
 footer .container .social {
   display: flex;
   gap: 0.7em;
@@ -912,6 +922,9 @@ footer .container .social .socialIcons {
   display: flex;
   gap: 0.5em;
 }
+footer .container .social .socialIcons:hover {
+  cursor: pointer;
+}
 footer .dimmedtrack {
   display: flex;
   justify-content: space-around;
@@ -924,6 +937,9 @@ footer .dimmedtrack .studioPresent {
   font-style: italic;
   text-decoration: underline;
   color: rgba(255, 255, 255, 0.7);
+}
+footer .dimmedtrack .studioPresent:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 968px) {
@@ -1043,55 +1059,56 @@ footer .dimmedtrack .studioPresent {
   .lightMode .hero .heroText {
     background-color: rgba(0, 0, 0, 0.1);
   }
-  .lightMode .hero .heroText h2, .lightMode .hero .heroText p {
-    color: #A62120;
+  .lightMode .hero .heroText h2,
+  .lightMode .hero .heroText p {
+    color: #a62120;
   }
 }
 .lightMode .dryAged {
   background-color: rgba(0, 0, 0, 0.2);
-  color: #A62120;
+  color: #a62120;
 }
 .lightMode .dryAged .daLeft .daButtons .drybtn {
   background-color: #fff;
-  color: #A62120;
-  border: 1px solid #A62120;
+  color: #a62120;
+  border: 1px solid #a62120;
 }
 .lightMode .grillkurs {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .lightMode .grillkurs .grillleft .glTxt {
-  color: #A62120;
+  color: #a62120;
 }
 .lightMode .grillkurs .grillleft .glTxt .grillbtn {
   background-color: #fff;
-  color: #A62120;
-  border: 1px solid #A62120;
+  color: #a62120;
+  border: 1px solid #a62120;
 }
 .lightMode .dh {
   background-color: rgba(0, 0, 0, 0.2);
-  color: #A62120;
+  color: #a62120;
 }
 .lightMode .dh .topText .dhbtn {
   background-color: #fff;
-  color: #A62120;
-  border: 1px solid #A62120;
+  color: #a62120;
+  border: 1px solid #a62120;
 }
 .lightMode .custome {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .lightMode .custome .cusRight {
-  color: #A62120;
+  color: #a62120;
 }
 .lightMode .genussnetz {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .lightMode .genussnetz .geTxt h2 {
-  color: #A62120;
+  color: #a62120;
 }
 .lightMode .genussnetz .geTxt .gebtn {
   background-color: #fff;
-  color: #A62120;
-  border: 1px solid #A62120;
+  color: #a62120;
+  border: 1px solid #a62120;
 }
 .lightMode .break {
   background-color: rgba(0, 0, 0, 0.2);
@@ -1099,19 +1116,20 @@ footer .dimmedtrack .studioPresent {
 .lightMode .award {
   background-color: rgba(0, 0, 0, 0.2);
 }
-.lightMode .award h2, .lightMode .award p {
-  color: #A62120;
+.lightMode .award h2,
+.lightMode .award p {
+  color: #a62120;
 }
 .lightMode .comments {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .lightMode .comments h2 {
-  color: #A62120;
+  color: #a62120;
 }
 .lightMode .comments .comFooter .combtn {
   background-color: #fff;
-  color: #A62120;
-  border: 1px solid #A62120;
+  color: #a62120;
+  border: 1px solid #a62120;
 }
 
 .popup {
@@ -1119,13 +1137,15 @@ footer .dimmedtrack .studioPresent {
   width: 30%;
   top: 30%;
   left: 35%;
-  background-color: #A62120;
+  background-color: #a62120;
   color: #fff;
   border-radius: 10px;
   padding: 0.5em 1em;
   z-index: 100;
   text-align: center;
   font-size: 1.5em;
+  -webkit-box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.35);
   animation: entrance 0s ease 0s 1 normal forwards;
   display: none;
@@ -1197,4 +1217,4 @@ footer .dimmedtrack .studioPresent {
 }
 .break img {
   width: 80%;
-}/*# sourceMappingURL=style.css.map */
+}

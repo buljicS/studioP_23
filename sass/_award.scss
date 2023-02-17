@@ -1,72 +1,70 @@
-.award{
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 8em 0;
+.award {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 8em 0;
 
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+  justify-content: center;
+  align-items: center;
+  .awText {
+    h2 {
+      font-size: 2.5em;
+    }
+  }
+  .awContent {
     display: flex;
-    flex-direction: row;
-    gap: 5em;
+    gap: 3.2em;
+    justify-content: center;
+
+    .awTop {
+      display: flex;
+      gap: 3.2em;
+      justify-content: center;
+      .awRight {
+        .inner {
+          #smallPic {
+            padding-bottom: 0.7em;
+          }
+        }
+      }
+    }
+
+    .awBot {
+      display: flex;
+      gap: 5em;
+      justify-content: center;
+    }
+  }
+
+  .contentP {
+    font-weight: 300;
+    text-align: center;
+    line-height: 2em;
+    color: rgba($color: #fff, $alpha: 0.5);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .award {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    .awText{
-        h2{
-            font-size: 2.5em;
-        }
-        
-    }
-    .awContent{
-        display: flex;
-        gap: 3.2em;
-        justify-content: center;
-        
-        .awTop{
-            display: flex;
-            gap: 3.2em;
-            justify-content: center;
-            .awRight{
-                .inner{
-                    #smallPic{
-                        padding-bottom: 0.7em;
-                    }
-                }
-            }
-        }
 
-        .awBot{
-            display: flex;
-            gap: 5em;
-            justify-content: center;
-        }
+    .awContent {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
     }
-
-    .contentP{
-        font-weight: 300;
-        text-align: center;
-        line-height: 2em;
-        color: rgba($color: #fff, $alpha: 0.5)
-    }
+  }
 }
 
-@media only screen and (max-width: 1200px){
-    .award{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .awContent{
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
-        }
+@media only screen and (max-width: 600px) {
+  .award {
+    .contentP {
+      line-height: 1.4em;
     }
-}
-
-@media only screen and (max-width: 600px){
-    .award{
-
-        .contentP{
-            line-height: 1.4em;
-        }
-    }
+  }
 }

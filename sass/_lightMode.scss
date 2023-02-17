@@ -1,110 +1,106 @@
-.lightMode{
-    @media  (max-width: 1100px) {
-            .hero{
-                background-color: rgba($color: #000000, $alpha: 0.1) !important;
-                .heroText{
-                    background-color: rgba($color: #000000, $alpha: 0.1);
-                    h2, p{
-                        color: #A62120;
-                    }
-                }
-            } 
+.lightMode {
+  @media (max-width: 1100px) {
+    .hero {
+      background-color: rgba($color: #000000, $alpha: 0.1) !important;
+      .heroText {
+        background-color: rgba($color: #000000, $alpha: 0.1);
+        h2,
+        p {
+          color: #a62120;
         }
-
-    .dryAged{
-        background-color: rgba($color: #000000, $alpha: 0.2);
-        color: #A62120;
-
-        .daLeft{
-            .daButtons{
-                .drybtn{
-                    background-color: #fff;
-                    color: #A62120;
-                    border: 1px solid #A62120;
-                }
-            }
-        }
+      }
     }
-    
-    .grillkurs{
-        background-color: rgba($color: #000000, $alpha: 0.3);
-        .grillleft{
-            .glTxt{
-                color: #A62120;
+  }
 
-                .grillbtn{
-                    background-color: #fff;
-                    color: #A62120;
-                    border: 1px solid #A62120;
-                }
-            }
+  .dryAged {
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    color: #a62120;
+
+    .daLeft {
+      .daButtons {
+        .drybtn {
+          background-color: #fff;
+          color: #a62120;
+          border: 1px solid #a62120;
         }
+      }
+    }
+  }
+
+  .grillkurs {
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    .grillleft {
+      .glTxt {
+        color: #a62120;
+
+        .grillbtn {
+          background-color: #fff;
+          color: #a62120;
+          border: 1px solid #a62120;
+        }
+      }
+    }
+  }
+
+  .dh {
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    color: #a62120;
+
+    .topText {
+      .dhbtn {
+        background-color: #fff;
+        color: #a62120;
+        border: 1px solid #a62120;
+      }
+    }
+  }
+
+  .custome {
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    .cusRight {
+      color: #a62120;
+    }
+  }
+
+  .genussnetz {
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    .geTxt {
+      h2 {
+        color: #a62120;
+      }
+
+      .gebtn {
+        background-color: #fff;
+        color: #a62120;
+        border: 1px solid #a62120;
+      }
+    }
+  }
+
+  .break {
+    background-color: rgba($color: #000000, $alpha: 0.2);
+  }
+
+  .award {
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    h2,
+    p {
+      color: #a62120;
+    }
+  }
+
+  .comments {
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    h2 {
+      color: #a62120;
     }
 
-    .dh{
-        background-color: rgba($color: #000000, $alpha: 0.2);
-        color: #A62120;
-
-        .topText{
-            .dhbtn{
-                background-color: #fff;
-                color: #A62120;
-                border: 1px solid #A62120; 
-            }
-        }
+    .comFooter {
+      .combtn {
+        background-color: #fff;
+        color: #a62120;
+        border: 1px solid #a62120;
+      }
     }
-
-    .custome{
-        background-color: rgba($color: #000000, $alpha: 0.3);
-        .cusRight{
-            color: #A62120;
-
-        }
-    }
-
-    .genussnetz{
-        background-color: rgba($color: #000000, $alpha: 0.2);
-        .geTxt{
-            h2{
-                color: #A62120;
-            }
-
-            .gebtn{
-                background-color: #fff;
-                color: #A62120;
-                border: 1px solid #A62120;
-            }
-        }
-    }
-
-    .break{
-        background-color: rgba($color: #000000, $alpha: 0.2);
-    }
-    
-    .award{
-        background-color: rgba($color: #000000, $alpha: 0.2);
-        h2, p{
-            color: #A62120;
-        }
-    }
-
-    .comments{
-        background-color: rgba($color: #000000, $alpha: 0.2);
-        h2{
-            color: #A62120;
-        }
-
-        .comFooter{
-            .combtn{
-                background-color: #fff;
-                color: #A62120;
-                border: 1px solid #A62120;
-            }
-        }
-
-    }
-    
-
-    
-
+  }
 }

@@ -5,38 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./sass/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <title>Brath</title>
   </head>
   <body>
-
     <div class="popup">
       <button id="close">&times;</button>
       <h2>Brath</h2>
       <p>Danke für Ihren Besuch</p>
       <h6>Barth 2023</h6>
-    </div> 
+    </div>
 
     <header>
       <div class="navigation-panel">
         <div class="subcontainer">
           <nav class="navbar">
-            <img src="./img/logo.svg" alt="logo" class="navbarLogo">
+            <img src="./img/logo.svg" alt="logo" class="navbarLogo" />
             <ul class="navMenu">
-              <li class="nav-item"><a href="#" class="nav-link">Die Metzgerei</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Dry Aged</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Fleischversand</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Events/Kurse</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Partyservice</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Tagesessen</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Impressum</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Die Metzgerei</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Dry Aged</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Fleischversand</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Events/Kurse</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Partyservice</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Tagesessen</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Impressum</a>
+              </li>
               <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
             </ul>
-            <a href="#" class="download"><img src="./img/navDowload.svg" alt="download icon"/>download</a>
+            <a href="#" class="download"
+              ><img src="./img/navDowload.svg" alt="download icon" />download</a
+            >
 
             <div class="hamburger">
               <span class="bar"></span>
@@ -50,28 +75,57 @@
       <section class="workTime">
         <div class="maxWidth">
           <img src="./img/clock.svg" alt="clock.svg" />
-          <span><span style="font-weight: bold;">Opentime:</span> Di. - Fr.: 07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30</span>
+          <span
+            ><span style="font-weight: bold">Opentime:</span> Di. - Fr.:
+            07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30</span
+          >
           <button onclick="toggle()" class="themeToggle">Leichte tema</button>
         </div>
       </section>
     </header>
 
     <main>
-      <section class="hero">       
+      <section class="hero">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img class="headerIMG" src="./img/headerIMG.jpg" alt="gg"></div>
-            <div class="swiper-slide"><img class="headerIMG" src="./img/emerson-vieira-pqDbQ21C59A-unsplash.jpg" alt="pic1"></div>
-            <div class="swiper-slide"><img class="headerIMG" src="./img/emerson-vieira-Qi7NlvF-ZsY-unsplash.jpg" alt="pic2"></div>
-            <div class="swiper-slide"><img class="headerIMG" src="./img/emerson-vieira-RO6Ke69Szhg-unsplash.jpg" alt="pic3"></div>
-            <div class="swiper-slide"><img class="headerIMG" src="./img/emerson-vieira-Mq1LDuswX2o-unsplash.jpg" alt="pic4"></div>
+            <div class="swiper-slide">
+              <img class="headerIMG" src="./img/headerIMG.jpg" alt="gg" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="headerIMG"
+                src="./img/emerson-vieira-pqDbQ21C59A-unsplash.jpg"
+                alt="pic1"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="headerIMG"
+                src="./img/emerson-vieira-Qi7NlvF-ZsY-unsplash.jpg"
+                alt="pic2"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="headerIMG"
+                src="./img/emerson-vieira-RO6Ke69Szhg-unsplash.jpg"
+                alt="pic3"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="headerIMG"
+                src="./img/emerson-vieira-Mq1LDuswX2o-unsplash.jpg"
+                alt="pic4"
+              />
+            </div>
           </div>
-  
+
           <div class="swiper-pagination"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-        </div>   
-        
+        </div>
+
         <div class="heroText">
           <h2>Heiko Brath Metzgermeister</h2>
           <p>
@@ -81,58 +135,62 @@
           </p>
         </div>
       </section>
-      
-      <!--dryaged-->
-        <section class="dryAged">
-          <div class="daLeft">
-            <div class="daTxt">
-              <div class="daTxTop">
-                <h2>Dry Aged</h2>
-                <h4>Alte Wutz, Dry Aged</h4> 
-              </div>
-              <p>Halt amet, consectetur Handtasche elit, sed do eiusmod tempor
-                Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad
-                minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi
-                Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener
-                Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim
-                Stuttgart. <br/><br/>id latine indoctum complectitur HugoClub
-                Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an,
-                his ei Reise euismod assentior.</p>
-                <div class="daButtons">
-                  <button class="drybtn">Dry Aged</button>
-                  <button class="drybtn">Alte Wutz</button>
-              </div>
-            </div>
-          </div>
 
-          <div class="daRight">
-            <div class="daIMG">
-              <div class="topIMG">
-                <img src="./img/topImg.jpg" alt="topImg">
-              </div>
-              <div class="botIMG">
-                <img src="./img/botImg.png" alt="botimg">
-                <img src="./img/botImg2.png" alt="botimg">
-                <img src="./img/botImg3.png" alt="botimg">
-              </div>
+      <!--dryaged-->
+      <section class="dryAged">
+        <div class="daLeft">
+          <div class="daTxt">
+            <div class="daTxTop">
+              <h2>Dry Aged</h2>
+              <h4>Alte Wutz, Dry Aged</h4>
+            </div>
+            <p>
+              Halt amet, consectetur Handtasche elit, sed do eiusmod tempor
+              Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad
+              minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi
+              Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener
+              Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim
+              Stuttgart. <br /><br />id latine indoctum complectitur HugoClub
+              Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an,
+              his ei Reise euismod assentior.
+            </p>
+            <div class="daButtons">
+              <button class="drybtn">Dry Aged</button>
+              <button class="drybtn">Alte Wutz</button>
             </div>
           </div>
-        </section>
+        </div>
+
+        <div class="daRight">
+          <div class="daIMG">
+            <div class="topIMG">
+              <img src="./img/topImg.jpg" alt="topImg" />
+            </div>
+            <div class="botIMG">
+              <img src="./img/botImg.png" alt="botimg" />
+              <img src="./img/botImg2.png" alt="botimg" />
+              <img src="./img/botImg3.png" alt="botimg" />
+            </div>
+          </div>
+        </div>
+      </section>
       <!--dryaged-->
 
       <!--grillkurs-->
       <section class="grillkurs">
         <div class="grillleft">
-            <div class="glTxt">
-                <h2>Buchen Sie den <br/>Grillkurs jetzt</h2>
-                <ul>
-                  <li><span class="lItem">professioneller Lehrer</span></li>
-                  <li><span class="lItem">ausgezeichneter Metzger</span></li>
-                  <li><span class="lItem">1 Tag</span></li>
-                  <li><span class="lItem">lernen Sie die Kunst des Grillens</span></li>
-                </ul>
-                <button class="grillbtn">Grillkurs</button>
-            </div>
+          <div class="glTxt">
+            <h2>Buchen Sie den <br />Grillkurs jetzt</h2>
+            <ul>
+              <li><span class="lItem">professioneller Lehrer</span></li>
+              <li><span class="lItem">ausgezeichneter Metzger</span></li>
+              <li><span class="lItem">1 Tag</span></li>
+              <li>
+                <span class="lItem">lernen Sie die Kunst des Grillens</span>
+              </li>
+            </ul>
+            <button class="grillbtn">Grillkurs</button>
+          </div>
         </div>
 
         <div class="grillright">
@@ -153,9 +211,12 @@
               minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi
               Sprechen Sie deutsch aliquip ex ea commodo consequat.
             </p>
-              <p>Wiener Schnitzel aute irure dolor in Guten Tag mollit anim Stuttgart.</p>
-                <p>id
-              latine indoctum complectitur HugoClub Mate mea meliore denique
+            <p>
+              Wiener Schnitzel aute irure dolor in Guten Tag mollit anim
+              Stuttgart.
+            </p>
+            <p>
+              id latine indoctum complectitur HugoClub Mate mea meliore denique
               nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod
               assentior
             </p>
@@ -170,11 +231,11 @@
         <div class="bot">
           <div class="g1">
             <img src="./img/wurstchen.png" alt="g61.png" />
-          <img src="./img/hahnchen.png" alt="g60.png" />
+            <img src="./img/hahnchen.png" alt="g60.png" />
           </div>
           <div class="g2">
-                <img src="./img/shwein.png" alt="g59.png" />
-                <img src="./img/rind.png" alt="g58.png" />
+            <img src="./img/shwein.png" alt="g59.png" />
+            <img src="./img/rind.png" alt="g58.png" />
           </div>
         </div>
       </section>
@@ -189,20 +250,21 @@
         <div class="cusRight">
           <div class="crTxt">
             <h2>Custome spices for your meat</h2>
-            <h3>Turnbeutel nostrud exercitation ullamco Sprechen Sie deutsch</h3>
-  
+            <h3>
+              Turnbeutel nostrud exercitation ullamco Sprechen Sie deutsch
+            </h3>
+
             <p>
               Odio principes iracundia Müller Rice pri. Ut vel solum mandamus,
               Kartoffelkopf natum adversarium ei ius, diam Schmetterling
-              honestatis eum. 
+              honestatis eum.
             </p>
-            <br>
+            <br />
             <p>
-              Wiener Schnitzel amet, consectetur Handtasche elit,
-              sed do eiusmod tempor Stuttgart ut labore et dolore magna 99
-              Luftballons Ut enim ad minim veniam, Turnbeutel nostrud exercitation
-              ullamco laboris nisi Sprechen Sie deutsch aliquip ex ea commodo
-              consequat.
+              Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod
+              tempor Stuttgart ut labore et dolore magna 99 Luftballons Ut enim
+              ad minim veniam, Turnbeutel nostrud exercitation ullamco laboris
+              nisi Sprechen Sie deutsch aliquip ex ea commodo consequat.
             </p>
           </div>
         </div>
@@ -210,10 +272,10 @@
       <!--custome-->
 
       <!--Fleischversand-->
-          <section class="fleischversand">
-              <h2>Fleischversand</h2>
-              <button class="flbtn">Jetzt bestellen</button>
-          </section> 
+      <section class="fleischversand">
+        <h2>Fleischversand</h2>
+        <button class="flbtn">Jetzt bestellen</button>
+      </section>
       <!--Fleischversand-->
 
       <!--genussnetz-->
@@ -227,7 +289,7 @@
             <h2>Metzgerei Brath ist Mitglied <br />im Genussnetzwerk</h2>
             <button class="gebtn">Gehen zu site</button>
           </div>
-        </div>    
+        </div>
       </section>
       <!--genussnetz-->
 
@@ -236,22 +298,28 @@
       </div>
 
       <!--award_section-->
-        <section class="award">
-         <div class="awText">
+      <section class="award">
+        <div class="awText">
           <h2>Auszeichnungen</h2>
-         </div>
-         <div class="awContent">
+        </div>
+        <div class="awContent">
           <div class="awTop">
             <div class="awLeft">
               <div class="inner">
-                <img src="./img/nagrada1.png" alt="nagrada1">
-                <p class="contentP">Schneewittchen <br> denique</p>
+                <img src="./img/nagrada1.png" alt="nagrada1" />
+                <p class="contentP">
+                  Schneewittchen <br />
+                  denique
+                </p>
               </div>
             </div>
             <div class="awRight">
               <div class="inner">
-                <img id="smallPic" src="./img/nagrada2.png" alt="nagrada2">
-                <p class="contentP">Tollit argumentum genau <br> Saepe lobortis</p>
+                <img id="smallPic" src="./img/nagrada2.png" alt="nagrada2" />
+                <p class="contentP">
+                  Tollit argumentum genau <br />
+                  Saepe lobortis
+                </p>
               </div>
             </div>
           </div>
@@ -259,22 +327,25 @@
           <div class="awBot">
             <div class="awLeft">
               <div class="inner">
-                <img src="./img/nagrada3.png" alt="nagrada3">
-                <p class="contentP">Grimms Märchen <br> expetenda</p>
+                <img src="./img/nagrada3.png" alt="nagrada3" />
+                <p class="contentP">
+                  Grimms Märchen <br />
+                  expetenda
+                </p>
               </div>
             </div>
             <div class="awRight">
               <div class="inner">
-                <img src="./img/nagrada4.png" alt="nagrada4 ">
-                <p class="contentP">Mettwurst mei <br> ullum gloriatur.</p>
+                <img src="./img/nagrada4.png" alt="nagrada4 " />
+                <p class="contentP">
+                  Mettwurst mei <br />
+                  ullum gloriatur.
+                </p>
               </div>
             </div>
           </div>
-         </div>
-          
-
-          
-        </section>
+        </div>
+      </section>
       <!--award_section-->
 
       <div class="break">
@@ -282,120 +353,129 @@
       </div>
 
       <!--comment_section-->
-        <section class="comments">
-          <div class="comHeader">
-            <h4>Empfehlungs</h4>
-            <h2>Was die Leute über uns sagen</h2>
-          </div>
+      <section class="comments">
+        <div class="comHeader">
+          <h4>Empfehlungs</h4>
+          <h2>Was die Leute über uns sagen</h2>
+        </div>
 
-          <div class="swiper swipeComments">
-            <img id="leftClick" src="./img/leftcursor.svg" alt="left">
-            <img id="rightClick" src="./img/rightCursor.svg" alt="right">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="card card1">
-                  <p class="comment">
-                    Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.
-                  </p>
-    
-                  <p class="user">
-                    Maria Kartofeln
-                  </p>
-                </div>
+        <div class="swiper swipeComments">
+          <img id="leftClick" src="./img/leftcursor.svg" alt="left" />
+          <img id="rightClick" src="./img/rightCursor.svg" alt="right" />
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card card1">
+                <p class="comment">
+                  Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener
+                  Schnitzel aute irure dolor in reprehenderit Guten Tag mollit
+                  anim Stuttgart.
+                </p>
+
+                <p class="user">Maria Kartofeln</p>
               </div>
+            </div>
 
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="cardHead">
-                    <img src="./img/grillkurs_icon.svg" alt="grill">
-                    <img src="./img/zvezdice.svg" alt="zvezdica">
-                  </div>
-    
-                  <div class="cardText">
-                    <p class="comment">
-                      Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna  Luftballons Ut Turnbeutel nostrud exercitation ullamco .
-                    </p>
-                    <p class="user">
-                      Halling Tobias<br>
-                      <span class="title">Koch</span>
-                    </p>
-                  </div>
-                    <img id="quote" src="./img/znak.svg" alt="quote">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="cardHead">
+                  <img src="./img/grillkurs_icon.svg" alt="grill" />
+                  <img src="./img/zvezdice.svg" alt="zvezdica" />
                 </div>
-              </div>
 
-              <div class="swiper-slide">
-                <div class="card card1">
+                <div class="cardText">
                   <p class="comment">
-                    Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.
+                    Wiener Schnitzel amet, consectetur Handtasche elit, sed do
+                    eiusmod tempor Stuttgart ut labore et dolore magna
+                    Luftballons Ut Turnbeutel nostrud exercitation ullamco .
                   </p>
                   <p class="user">
-                    Rene Weinstein
+                    Halling Tobias<br />
+                    <span class="title">Koch</span>
                   </p>
                 </div>
+                <img id="quote" src="./img/znak.svg" alt="quote" />
               </div>
-            </div>   
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card card1">
+                <p class="comment">
+                  Achtung fur atine indoctum complectitur HugoClub Mate mea
+                  meliore denique nominavi id. Ohrwurm expetenda nam an, his ei
+                  Reise euismod assentior.
+                </p>
+                <p class="user">Rene Weinstein</p>
+              </div>
+            </div>
           </div>
+        </div>
 
-
-
-          <div class="comFooter">
-            <button class="combtn">Alle Berichte</button>
-          </div>
-
-        </section>
+        <div class="comFooter">
+          <button class="combtn">Alle Berichte</button>
+        </div>
+      </section>
       <!--comment_section-->
     </main>
 
     <!--Footer-->
-      <footer>
-        <div class="container">
-          <div class="contact">
-            <div class="location">
-              <img src="./img/pin.svg" alt="pin">
-              <p>Klauprechtstraße 25 <br> 76137 Karlsruhe, Germany</p>
-            </div>
-  
-            <div class="phone displayProop">
-              <img src="./img/phone.svg" alt="phone">
-              <p>+49 721 358060</p>
-            </div>
-  
-            <div class="mail displayProop">
-              <img src="./img/mail.svg" alt="mail">
-              <p>info@partyservice-brath.de</p>
-            </div>
+    <footer>
+      <div class="container">
+        <div class="contact">
+          <div class="location">
+            <img src="./img/pin.svg" alt="pin" />
+            <p>
+              Klauprechtstraße 25 <br />
+              76137 Karlsruhe, Germany
+            </p>
           </div>
-  
-          <div class="logo">
-            <img src="./img/logo.svg" alt="logo">
+
+          <div class="phone displayProop">
+            <img src="./img/phone.svg" alt="phone" />
+            <p>+49 721 358060</p>
           </div>
-          
-          <div class="social">
-            <p class="socialP">Besuchen Sie uns auf:</p>
-            <div class="socialIcons">
-              <img src="./img/tw.svg" alt="twitter">
-              <img src="./img/fb.svg" alt="facebook">
-              <img src="./img/ig.svg" alt="instagram">
-              <img src="./img/yt.svg" alt="youtube">
-            </div>
+
+          <div class="mail displayProop">
+            <img src="./img/mail.svg" alt="mail" />
+            <p>info@partyservice-brath.de</p>
           </div>
         </div>
 
-        <div class="dimmedtrack">
-          <p id="copyrightP">© 2020 by Metzgerei Heiko Brath  GmbH, Deutschland</p>
-          <p id="teampP">Code and design by <span class="studioPresent">StudioPresent</span></p>
+        <div class="logo">
+          <img src="./img/logo.svg" alt="logo" />
         </div>
-      </footer>
+
+        <div class="social">
+          <p class="socialP">Besuchen Sie uns auf:</p>
+          <div class="socialIcons">
+            <img src="./img/tw.svg" alt="twitter" />
+            <img src="./img/fb.svg" alt="facebook" />
+            <img src="./img/ig.svg" alt="instagram" />
+            <img src="./img/yt.svg" alt="youtube" />
+          </div>
+        </div>
+      </div>
+
+      <div class="dimmedtrack">
+        <p id="copyrightP">© 2020 by Metzgerei Heiko Brath GmbH, Deutschland</p>
+        <p id="teampP">
+          Code and design by <span class="studioPresent">StudioPresent</span>
+        </p>
+      </div>
+    </footer>
     <!--Footer-->
 
     <script scr="./js/mode.js"></script>
     <script src="./js/hamburger.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+      integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/rellax.js"></script>
     <script src="./js/lightMode.js"></script>
     <script src="./js/modal.js"></script>
-  </body> 
+  </body>
 </html>
