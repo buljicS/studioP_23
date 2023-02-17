@@ -7,3 +7,6 @@ SASS <br>
 JavaScript <br>
 React <br>
 ReactJS <br>
+
+### ReacJS
+Nakon kloniranja repoa, u react root folderu pokrenuti ###npm install
