@@ -5,6 +5,5 @@ Februar 2023 <br>
 HTML5 <br>
 SASS <br>
 JavaScript <br>
-React <br>
 ReactJS <br>
 
