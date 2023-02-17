@@ -13,7 +13,10 @@
 <h2>Komponente</h2>
 
 ### `NodeJS`
- - 18.4 LTS
+ - 18.14.0 LTS
+
+### `npm`
+ - 9.5.0
  
 ### `SwiperJS`
  - v9 - React
